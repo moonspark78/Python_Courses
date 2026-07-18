@@ -13,3 +13,8 @@ Data exists in many forms:
 - 23.5 is a float data type
 - "root" is a string data type
 """
+
+# Variables
+a = 78
+name = "test"
+salary= 3456.67
