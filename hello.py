@@ -1,3 +1,2 @@
-#The blow print function prints
-print("hello Word, \ni am learning Python") #Hello
-print("test \tmessi")
+acc=46898764356
+print(acc)
