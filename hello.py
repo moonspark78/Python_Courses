@@ -6,3 +6,10 @@ print(name)
 print(name, id)
 
 # A variable can store sata of different types in Python.
+
+""" 
+Data exists in many forms:
+- 45 is an integer data type
+- 23.5 is a float data type
+- "root" is a string data type
+"""
