@@ -18,3 +18,4 @@ Data exists in many forms:
 a = 78
 name = "test"
 salary= 3456.67
+print(type(name))
