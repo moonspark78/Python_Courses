@@ -1,3 +1,3 @@
 # Methods for String
-name= " root admin user "
-print("root".upper())
+name= " root admin USER TEST "
+print(name.lower())
