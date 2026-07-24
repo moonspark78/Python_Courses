@@ -4,3 +4,6 @@ print(name.lower())
 
 #First letter of the string
 print(name.capitalize())
+
+#First oh each word
+print(name)
