@@ -6,4 +6,4 @@ print(name.lower())
 print(name.capitalize())
 
 #First oh each word
-print(name)
+print(name.title())
