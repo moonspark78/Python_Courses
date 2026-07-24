@@ -7,3 +7,6 @@ print(name.capitalize())
 
 #First oh each word
 print(name.title())
+
+#Replace a word
+print(name.replace("root", "messi"))
