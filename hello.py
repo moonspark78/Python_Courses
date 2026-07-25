@@ -9,5 +9,5 @@ print(name.capitalize())
 print(name.title())
 
 #Replace a word
-print(name.replace("root", "messi"))
-print(name)
+replaced = name.replace("root", "messi")
+print(replaced)
