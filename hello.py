@@ -16,3 +16,4 @@ print(replaced)
 # --------------- String slicing--------------
 url = "https://google.com"
 print(url[8:])
+print(url[4:])
