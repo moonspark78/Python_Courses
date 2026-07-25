@@ -11,3 +11,7 @@ print(name.title())
 #Replace a word
 replaced = name.replace("root", "messi")
 print(replaced)
+
+
+# --------------- String slicing--------------
+url = "https://google.com"
