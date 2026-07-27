@@ -19,3 +19,7 @@ print(url[8:])  # google.com
 print(url[4:])  # s://google.com
 print(url[5:])  # ://google.com
 print(url[8:-4]) # google
+
+
+
+#-----------------Count how many time a sub-strings---------------------------
