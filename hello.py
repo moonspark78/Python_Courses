@@ -43,4 +43,4 @@ apeydo = "admin"
 id = 105
 print(f"My name is {apeydo} and my id is {id}")
 print(f"My name is {apeydo} and  {34*34}")
-print(f"My name is {apeydo} and  {34/46:.2f}") #
+print(f"My name is {apeydo} and  {34/46:.2f}") # Por avoir 2 chiffre apres la virgule
