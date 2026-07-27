@@ -35,3 +35,6 @@ print("the len of the strings before applying stripfunc", len(name2)) #25 parce 
 t= " lo"
 t.lstrip() # ici ca retire l'espace a gauche
 t.rstrip() # ici ca retire l'espace a droite
+
+
+#---------------------String Formating----------------------
