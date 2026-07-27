@@ -42,3 +42,4 @@ t.rstrip() # ici ca retire l'espace a droite
 apeydo = "admin"
 id = 105
 print(f"My name is {apeydo} and my id is {id}")
+print(f"My name is {apeydo} and  {34*34}")
