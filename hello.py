@@ -31,3 +31,7 @@ name2= " root user root admin root "
 print("the len of the strings before applying stripfunc", len(name2)) #27
 name2 = name2.strip()
 print("the len of the strings before applying stripfunc", len(name2)) #25 parce que ca retire les espaces devant et deriere
+
+t= " lo"
+t.lstrip() # ici ca retire l'espace a gauche
+t.rstrip() # ici ca retire l'espace a droite
