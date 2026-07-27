@@ -38,3 +38,6 @@ t.rstrip() # ici ca retire l'espace a droite
 
 
 #---------------------String Formating----------------------
+
+apeydo = "admin"
+id = 105
