@@ -15,6 +15,6 @@ print(replaced)
 
 # --------------- String slicing--------------
 url = "https://google.com"
-print(url[8:])
-print(url[4:])
-print(url[5:])
+print(url[8:])  # google.com
+print(url[4:])  # s://google.com
+print(url[5:])  # ://google.com
