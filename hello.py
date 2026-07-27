@@ -28,5 +28,6 @@ print(name1.count("root"))
 
 #-----------------Len()----------------------
 name2= " root user root admin root "
-print("the len of the strings before applying stripfunc", len(name2))
+print("the len of the strings before applying stripfunc", len(name2)) #27
 name2 = name2.strip()
+print("the len of the strings before applying stripfunc", len(name2)) #25 parce que ca retire les espaces devant et deriere
