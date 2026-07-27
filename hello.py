@@ -23,3 +23,5 @@ print(url[8:-4]) # google
 
 
 #-----------------Count how many time a sub-strings---------------------------
+name1 = "root user root admin"
+print(name1.count("root"))
