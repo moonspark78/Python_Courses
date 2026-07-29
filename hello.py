@@ -55,3 +55,4 @@ print("My name is {} and id is {}".format(nom, id)) #Result = My name is root an
 
 #------------------Introduction Operators----------------------------------
 print("Addition is ", 45+56)
+print("Multiplication is ", 56*867)
