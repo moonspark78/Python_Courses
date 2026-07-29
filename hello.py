@@ -47,3 +47,5 @@ print(f"My name is {apeydo} and  {34/46:.2f}") # Por avoir 2 chiffre apres la vi
 print(f"My name is {apeydo} and  {34/46:.4f}") # Por avoir 4 chiffre apres la virgule
 
 nom = "root"
+id = 1005
+print("My name is {}".format(nom)) #Result = My name is root
