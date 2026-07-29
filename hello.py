@@ -50,3 +50,8 @@ nom = "root"
 id = 1005
 print("My name is {}".format(nom)) #Result = My name is root
 print("My name is {} and id is {}".format(nom, id)) #Result = My name is root and id is 1005
+
+
+
+#------------------Introduction Operators----------------------------------
+print("Addition is ", 45+56)
