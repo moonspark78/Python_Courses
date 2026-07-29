@@ -49,3 +49,4 @@ print(f"My name is {apeydo} and  {34/46:.4f}") # Por avoir 4 chiffre apres la vi
 nom = "root"
 id = 1005
 print("My name is {}".format(nom)) #Result = My name is root
+print("My name is {} and id is {}".format(nom, id)) #Result = My name is root and id is 1005
