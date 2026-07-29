@@ -57,3 +57,4 @@ print("My name is {} and id is {}".format(nom, id)) #Result = My name is root an
 print("Addition is ", 45+56)
 print("Multiplication is ", 56*867)
 print("Subtraction is ", 56 - 867)
+print("Remainder is : ", 45%5)
