@@ -70,3 +70,4 @@ print("Subtraction is ", a - b)
 print("Remainder is : ", a % b)
 print(f"Division is , {a / b:.4f}")
 
+#---------------------BOOLEAN DATA TYPES-------------------------------
