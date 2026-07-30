@@ -68,5 +68,5 @@ print("Addition is ", a+b)
 print("Multiplication is ", a*b)
 print("Subtraction is ", a - b)
 print("Remainder is : ", a % b)
-print("Division is ", a / b)
+print(f"Division is , {a / b:.4f}")
 
