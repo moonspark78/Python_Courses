@@ -77,4 +77,8 @@ print("--------------------")
 print("---------BOOLEAN DATA TYPES-----------")
           #True 1
           #False 0
-print(12>6)
+print(12>6)  #True
+
+t=True
+s=False
+print(s) #False
