@@ -59,3 +59,7 @@ print("Multiplication is ", 56*867)
 print("Subtraction is ", 56 - 867)
 print("Remainder is : ", 45%5)
 print("Division is ", 45/5)
+
+#on peut stocker les valeurs dans des variables 
+a=50
+b=2
