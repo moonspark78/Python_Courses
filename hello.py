@@ -82,3 +82,4 @@ print(12>6)  #True
 t=True
 s=False
 print(s) #False
+print(type("t")) # <class 'str'>
