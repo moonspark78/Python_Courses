@@ -71,3 +71,10 @@ print("Remainder is : ", a % b)
 print(f"Division is , {a / b:.4f}")
 
 #---------------------BOOLEAN DATA TYPES-------------------------------
+print("--------------------")
+print("--------------------")
+print("--------------------")
+print("---------BOOLEAN DATA TYPES-----------")
+          #True 1
+          #False 0
+print(12>6)
