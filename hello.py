@@ -61,5 +61,8 @@ print("Remainder is : ", 45%5)
 print("Division is ", 45/5)
 
 #on peut stocker les valeurs dans des variables 
+print("--------------------")
 a=50
 b=2
+print("Addition is ", a+b)
+print("Multiplication is ", a*b)
