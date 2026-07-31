@@ -92,5 +92,9 @@ name = input("Entrer your name ")
 print("Your number is : ",x, "hello ", name)
 
 
+#------------Type Casting---------------------------
+#allows us to convert one data type into another for example , turning a string into an integer
+
+
 
 
