@@ -89,7 +89,7 @@ print(type("t")) # <class 'str'>
 #-----------Input User----------------
 x = input('Entrer any number : ')
 name = input("Entrer your name ")
-print("Your number is : ",x)
+print("Your number is : ",x, "hello ", name)
 
 
 
