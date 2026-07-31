@@ -87,8 +87,8 @@ print(type("t")) # <class 'str'>
 
 
 #-----------Input User----------------
-x = input('Entrer any number')
-
+x = input('Entrer any number : ')
+print("Your number is : ",x)
 
 
 
