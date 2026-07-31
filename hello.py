@@ -83,3 +83,13 @@ t=True
 s=False
 print(s) #False
 print(type("t")) # <class 'str'>
+
+
+
+#-----------Input User----------------
+x = input('Entrer any number')
+
+
+
+
+
