@@ -94,6 +94,8 @@ print("Your number is : ",x, "hello ", name)
 
 #------------Type Casting---------------------------
 #allows us to convert one data type into another for example , turning a string into an integer
+e= 45.56
+e=int(e)
 
 
 
