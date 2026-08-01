@@ -107,7 +107,8 @@ print("------")
 
 t= 45
 print(t, type(t)) #<class 'int'>
-
+t=float(t) #Convert int to float
+print(t, type(t)) #<class 'float'>
 
 
 
