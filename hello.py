@@ -87,15 +87,16 @@ print(type("t")) # <class 'str'>
 
 
 #-----------Input User----------------
-x = input('Entrer any number : ')
-name = input("Entrer your name ")
-print("Your number is : ",x, "hello ", name)
+#x = input('Entrer any number : ')
+#name = input("Entrer your name ")
+#print("Your number is : ",x, "hello ", name)
 
 
 #------------Type Casting---------------------------
 #allows us to convert one data type into another for example , turning a string into an integer
+print("--------Type Casting--------")
 e= 45.56
-e=int(e)
+e=int(e) #Convert float to int
 print(e)
 
 
