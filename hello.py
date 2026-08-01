@@ -113,7 +113,7 @@ print(t, type(t)) #<class 'float'>
 print("------")
 print("------")
 
-r = input("Enter any number : ")
+r = input("Enter any number : ") #Parce que input() retourne une string, on doit convertir la valeur en int pour pouvoir faire des operations mathematiques
 a = int(r) #Convert string to int
 print(a+7)
 
