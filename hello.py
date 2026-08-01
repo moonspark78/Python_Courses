@@ -115,6 +115,7 @@ print("------")
 
 r = input("Enter any number : ")
 a = int(r) #Convert string to int
+print(a+7)
 
 
 
