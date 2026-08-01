@@ -117,5 +117,6 @@ r = input("Enter any number : ") #Parce que input() retourne une string, on doit
 a = int(r) #Convert string to int
 print(a+7)
 
-
+print("------")
+o1 = input("Enter any number : ")
 
