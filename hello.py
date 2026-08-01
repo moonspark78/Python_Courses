@@ -113,5 +113,8 @@ print(t, type(t)) #<class 'float'>
 print("------")
 print("------")
 
+r = input("Enter any number : ")
+a = int(r) #Convert string to int
+
 
 
