@@ -101,5 +101,13 @@ e=int(e) #Convert float to int
 print(e, type(e)) #<class 'int'>
 
 
+print("------")
+print("------")
+print("------")
+
+t= 45
+print(t, type(t)) #<class 'int'>
+
+
 
 
