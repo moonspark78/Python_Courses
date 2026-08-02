@@ -121,3 +121,6 @@ print("------")
 o1 = input("Enter any number : ")
 o2 = input("Enter any number : ")
 print(int(o1) + int(o2))
+
+print("------")
+r1 = int(input("Enter any number : "))
