@@ -130,4 +130,5 @@ print(r1 + r2)
 print("------")
 r3 = float(input("Enter any number : "))
 r4 = float(input("Enter any number : "))
+print(r3 + r4)
 
