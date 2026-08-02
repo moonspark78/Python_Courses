@@ -126,3 +126,7 @@ print("------")
 r1 = int(input("Enter any number : "))
 r2 = int(input("Enter any number : "))
 print(r1 + r2)
+
+print("------")
+r3 = float(input("Enter any number : "))
+
