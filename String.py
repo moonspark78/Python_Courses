@@ -6,3 +6,4 @@ print("root" + " " + "user") #rootuser
 print("-----------")
 fname = "root"
 lname = "user"
+print("The fullname is  ," + fname + " " + lname) #root user
