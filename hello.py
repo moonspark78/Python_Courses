@@ -124,3 +124,4 @@ print(int(o1) + int(o2))
 
 print("------")
 r1 = int(input("Enter any number : "))
+r2 = int(input("Enter any number : "))
