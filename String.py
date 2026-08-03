@@ -2,6 +2,7 @@
 print(12+8)
 print(11+3)
 print(12**2)
+print(12/2)
 print(12-8)
 print("root" + "user") #rootuser
 print("root" + " " + "user") #rootuser
