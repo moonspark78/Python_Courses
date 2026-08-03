@@ -1,5 +1,6 @@
 #--------------------String.py--------------------
 print(12+8)
+print(11+3)
 print("root" + "user") #rootuser
 print("root" + " " + "user") #rootuser
 
