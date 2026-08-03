@@ -5,6 +5,7 @@ print("root" + " " + "user") #rootuser
 
 print("-----------")
 fname = "root"
+f1name = "root"
 lname = "user"
 print("The fullname is ," + fname + " " + lname) #root user
 print(12 + "root") #TypeError: unsupported operand type(s) for +: 'int' and 'str'
