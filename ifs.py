@@ -6,4 +6,4 @@ if 45 > 10:
     
     
 if 45 > 100:
-    print("45 is greater than 10")
+    print("45 is greater than 10") #This will not be printed because the condition is false
