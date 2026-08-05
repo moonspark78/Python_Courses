@@ -17,3 +17,5 @@ if 45 > 100:
 score=74
 if score >= 90:
     print("Congratulations! You got an A grade")
+elif score >= 80:
+    print("Congratulations! You got a B grade")
