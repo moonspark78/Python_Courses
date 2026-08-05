@@ -32,3 +32,6 @@ if 22==22 or 1==2 or 3==4:
     print("At least one condition is true.")
 else:
     print("All conditions are false.")
+
+if not 22==23:
+    print("The condition is false, so this will be printed.")
