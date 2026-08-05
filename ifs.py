@@ -19,3 +19,5 @@ if score >= 90:
     print("Congratulations! You got an A grade")
 elif score >= 80:
     print("Congratulations! You got a B grade")
+elif score >= 70:
+    print("Congratulations! You got a C grade")
