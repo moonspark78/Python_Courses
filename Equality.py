@@ -12,3 +12,9 @@ if "root"=="root ":
     print("The strings are equal.")
 else:
     print("The strings are not equal.")
+    
+
+if 12!=8:
+    print("The numbers are not equal.")
+else:
+    print("The numbers are equal.")
