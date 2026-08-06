@@ -6,3 +6,5 @@ password=input("Enter your password: ")
 
 if name==username and password==passwd:
     print("Access granted.")
+else:
+    print("Access denied.")
