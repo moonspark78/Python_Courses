@@ -3,3 +3,6 @@ for i in range (1,12,1):
     
 for i in range (1,12,1):
     print("hello world")
+    
+for i in range (1,12,1):
+    print("hello world", i)
