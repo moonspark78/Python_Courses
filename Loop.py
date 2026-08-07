@@ -13,3 +13,6 @@ for i in range (1,12,1):
 # Dans le in range 12-1 
 for i in range (1, 12): #On précise le nombre de pas c'est par défauts 1
     print(i)
+    
+for i in range (1, 12, 2): #On précise le nombre de pas de 2
+    print(i)
