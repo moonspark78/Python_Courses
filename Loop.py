@@ -21,4 +21,4 @@ for i in range ( 12 ):
     print(i) #ici la loop commence à 0 et va jusqu'à 11, le pas est de 1 par défaut
     
 for i in range (1,11,1):
-    print(i) 
+    print(i*2) 
