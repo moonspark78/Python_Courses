@@ -18,4 +18,4 @@ for i in range (1, 12, 2): #On précise le nombre de pas de 2
     print(i)
     
 for i in range ( 12 ):
-    print(i)
+    print(i) #ici la loop commence à 0 et va jusqu'à 11, le pas est de 1 par défaut
