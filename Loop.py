@@ -24,4 +24,4 @@ for i in range (1,11,1):
     print(i*2) 
 
 for i in range (1,11,1):
-    print(f"{i} * 2 = {i*2}") 
+    print(f"{i} * 2 = {i*2}") #ici on utilise la f-string pour afficher le résultat de la multiplication
