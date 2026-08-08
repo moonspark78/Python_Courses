@@ -22,3 +22,6 @@ for i in range ( 12 ):
     
 for i in range (1,11,1):
     print(i*2) 
+
+for i in range (1,11,1):
+    print(f"{i} * 2 = {i*2}") 
