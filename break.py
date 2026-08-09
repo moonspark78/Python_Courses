@@ -4,3 +4,11 @@ for i in range(1, 10+1):
     if i == 5:
         break
 print("Loop exited at i =", i)
+
+
+while True:
+    print("bonjour")
+
+    if True:
+        print("dans le if")
+        break
