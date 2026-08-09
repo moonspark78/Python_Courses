@@ -19,3 +19,4 @@ while True:
 
 """-----------Continue statement is used to skip the current iteration of a loop and move on to the next iteration.
 It can also be used in both for and while loops."""
+for i in range(1, 10+1):
