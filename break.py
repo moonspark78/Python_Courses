@@ -14,3 +14,8 @@ while True:
     if True:
         print("dans le if")
         break
+
+
+
+"""-----------Continue statement is used to skip the current iteration of a loop and move on to the next iteration.
+It can also be used in both for and while loops."""
