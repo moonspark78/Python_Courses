@@ -5,6 +5,8 @@ for i in range(1, 10+1):
         break
 print("Loop exited at i =", i)
 
+print("\n")
+print("-------------------")
 
 while True:
     print("bonjour")
