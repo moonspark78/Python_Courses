@@ -7,5 +7,8 @@ def add():
 
 def mul():
     print("Multiplication is : ", 5*5)
+    
+def div():
+    print("Division is : ", 45/5)
 
 add()
