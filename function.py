@@ -4,9 +4,8 @@
 
 def add():
     print("Sum is : ", 5+5)
-    print("inside the body of the function")
-    print("sum is > ", 565+78)
 
-add()
-add()
+def mul():
+    print("Multiplication is : ", 5*5)
+
 add()
