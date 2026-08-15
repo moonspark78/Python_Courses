@@ -8,3 +8,5 @@ def add():
     print("sum is > ", 565+78)
 
 add()
+add()
+add()
