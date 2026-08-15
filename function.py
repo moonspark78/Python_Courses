@@ -4,3 +4,5 @@
 
 def add():
     print("Sum is : ", 5+5)
+
+add()
