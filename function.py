@@ -20,3 +20,4 @@ div()
 def add1(a,b):
     print("Sum is : ", a+b)
     
+add1(10,20)
