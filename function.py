@@ -16,3 +16,7 @@ mul()
 div()
 
 """ --------Passing parameters to function-------- """
+
+def add1(a,b):
+    print("Sum is : ", a+b)
+    
