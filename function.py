@@ -12,3 +12,5 @@ def div():
     print("Division is : ", 45/5)
 
 add()
+mul()
+div()
