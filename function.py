@@ -14,3 +14,5 @@ def div():
 add()
 mul()
 div()
+
+""" --------Passing parameters to function-------- """
