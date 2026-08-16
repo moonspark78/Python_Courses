@@ -23,7 +23,9 @@ def add1(a,b):
 
 
 def print_name(fname, lname):
+    print(f"Full name is : {fname} {lname}")
 
 
 
 add1(10,20)
+print_name("John", "Doe")
