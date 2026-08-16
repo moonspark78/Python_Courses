@@ -29,5 +29,10 @@ def print_name(fname, lname):
 def multiply(a,b,c):
     print("Multiplication is : ", a*b*c)
 
+a=1
+b=21
+c=3
+
 add1(10,20)
 print_name("John", "Doe")
+multiply(a,b,c)
