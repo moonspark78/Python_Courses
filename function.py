@@ -26,6 +26,7 @@ def print_name(fname, lname):
     print(f"Full name is : {fname} {lname}")
 
 
+def multiply(a,b,c):
 
 add1(10,20)
 print_name("John", "Doe")
