@@ -20,5 +20,5 @@ def add1():
     print("x = ",x)
     
 add1() # x = 89
-print("Outside if the fuction b =",b)
+print("Outside if the fuction b =",b) # Outside if the fuction B= 10
 print("x = ",x)
