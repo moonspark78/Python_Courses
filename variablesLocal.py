@@ -20,3 +20,4 @@ def add1():
     print("x = ",x)
     
 add1()
+print("Outside if the fuction b =",b)
