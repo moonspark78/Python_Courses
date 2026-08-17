@@ -7,3 +7,4 @@ def add():
     print("Inside add function a = ",a)
     
 add()
+print("Outside if the function a =",a)
