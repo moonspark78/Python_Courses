@@ -5,3 +5,5 @@ Variable scope defines where a variable can be acces or modified within a progra
 a=56
 def add():
     print("Inside add function a = ",a)
+    
+add()
