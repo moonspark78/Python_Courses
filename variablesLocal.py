@@ -16,3 +16,5 @@ print("Outside if the function a =",a)
 #-------Global Varible vs Local Variable
 b = 10
 def add1():
+    x=89
+    print("x = ",x)
