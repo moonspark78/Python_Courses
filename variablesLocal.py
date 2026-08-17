@@ -18,3 +18,5 @@ b = 10
 def add1():
     x=89
     print("x = ",x)
+    
+add1()
