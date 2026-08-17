@@ -10,3 +10,9 @@ def add():
     
 add()
 print("Outside if the function a =",a)
+
+#--------------------------------------
+
+#-------Global Varible vs Local Variable
+b = 10
+def add1():
