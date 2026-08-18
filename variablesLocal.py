@@ -22,3 +22,8 @@ def add1():
 add1() # x = 89
 print("Outside if the fuction b =",b) # Outside if the fuction B= 10
 print("x = ",x) # « x » n’est pas défini Erreur
+
+
+""" 
+Mais pour Déclarer une variable globale à l’intérieur d’une fonction, on utilise le mot-clé global.
+"""
