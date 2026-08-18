@@ -32,3 +32,5 @@ def add2():
     global f
     f= 20
     print("Inside add2 function f = ",f)
+    
+add2() # Inside add2 function f = 20
