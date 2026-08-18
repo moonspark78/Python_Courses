@@ -34,4 +34,5 @@ def add2():
     print("Inside add2 function f = ",f)
     
 add2() # Inside add2 function f = 20
-print("Outside if the function f =",f) # Outside if the function f = 20
+print("Outside if the function e =",e) # Outside if the function e = 10
+pr
