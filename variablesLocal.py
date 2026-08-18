@@ -36,3 +36,7 @@ def add2():
 add2() # Inside add2 function f = 20
 print("Outside if the function e =",e) # Outside if the function e = 10
 print("f = ",f) # f = 20
+
+""" 
+Si on déclare la meme varible dans deux fonction différentes, elles sont considérées comme deux variables différentes.
+"""
