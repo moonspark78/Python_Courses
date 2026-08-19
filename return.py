@@ -8,3 +8,9 @@ def add():
     return 5 + 3
 
 add() # This code will return 8, but since we are not capturing the return value, it will not be displayed or stored anywhere.
+
+
+def add1():
+    return 10 + 2
+
+print(add1()) # This code will return 12 and print it to the console.
