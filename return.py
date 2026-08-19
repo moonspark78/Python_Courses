@@ -14,3 +14,5 @@ def add1():
     return 10 + 2
 
 print(add1()) # This code will return 12 and print it to the console.
+
+def add2():
