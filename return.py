@@ -20,3 +20,5 @@ def add2():
     b=10
     c = a + b
     return c
+
+print(add2()) # This code will return 60 and print it to the console.
