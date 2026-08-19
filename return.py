@@ -5,5 +5,6 @@ If no expression is provided, the function will return None by default.
 """
 
 def add():
-    retrun 5 + 3
-    
+    return 5 + 3
+
+add() # This code will return 8, but since we are not capturing the return value, it will not be displayed or stored anywhere.
