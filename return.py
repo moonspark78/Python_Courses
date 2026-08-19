@@ -18,4 +18,4 @@ print(add1()) # This code will return 12 and print it to the console.
 def add2():
     a=50
     b=10
-    
+    c = a + b
