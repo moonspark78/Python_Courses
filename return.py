@@ -39,3 +39,5 @@ def add4():
     b=300
     c = a + b
     return "sunny" # This code will return the string "sunny" and exit the function.
+
+a=add4() # This code will return "sunny" and store it in the variable 'a'.
