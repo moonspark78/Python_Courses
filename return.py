@@ -38,3 +38,4 @@ def add4():
     a=200
     b=300
     c = a + b
+    return "sunny" # This code will return the string "sunny" and exit the function.
