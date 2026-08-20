@@ -37,3 +37,4 @@ a=add3() # This code will return 120 and store it in the variable 'a'.
 def add4():
     a=200
     b=300
+    c = a + b
