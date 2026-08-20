@@ -21,4 +21,4 @@ def add2():
     c = a + b
     return c
 
-print(add2()) # This code will return 60 and print it to the console.
+print(add2()) # type: ignore # This code will return 60 and print it to the console.
