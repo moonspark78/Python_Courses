@@ -29,3 +29,5 @@ def add3():
     b=20
     c = a + b
     return c
+    print("This line will not be executed because it comes after the return statement.")
+    
