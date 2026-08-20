@@ -22,3 +22,10 @@ def add2():
     return c
 
 print(add2()) # type: ignore # This code will return 60 and print it to the console.
+
+
+def add3():
+    a=100
+    b=20
+    c = a + b
+    return c
