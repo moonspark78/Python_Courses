@@ -31,3 +31,4 @@ def add3():
     return c
     print("This line will not be executed because it comes after the return statement.")
     
+a=add3() # This code will return 120 and store it in the variable 'a'.
