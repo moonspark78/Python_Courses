@@ -41,3 +41,4 @@ def add4():
     return "sunny" # This code will return the string "sunny" and exit the function.
 
 a=add4() # This code will return "sunny" and store it in the variable 'a'.
+print(a) # This code will print "sunny" to the console.
