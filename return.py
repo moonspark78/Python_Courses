@@ -45,3 +45,4 @@ print(a) # This code will print "sunny" to the console.
 
 def add5(a, b):
     return a + b
+print(add5(5, 3)) # This will print 8 to the console.
