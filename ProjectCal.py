@@ -5,3 +5,5 @@ print("1) is for Addition")
 print("2) is for Subtraction")
 print("3) is for Multiplication")
 print("4) is for Division")
+
+choice = (input("Enter your choice: "))
