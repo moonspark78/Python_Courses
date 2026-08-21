@@ -42,3 +42,6 @@ def add4():
 
 a=add4() # This code will return "sunny" and store it in the variable 'a'.
 print(a) # This code will print "sunny" to the console.
+
+def add5(a, b):
+    return a + b
