@@ -7,3 +7,6 @@ print("3) is for Multiplication")
 print("4) is for Division")
 
 choice = (input("Enter your choice: "))
+
+if choice == 1:
+    add(num1, num2)
