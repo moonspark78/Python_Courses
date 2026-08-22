@@ -21,6 +21,8 @@ def sub(a, b):
 def div(a, b):
     if b == 0:
         print("Error: Division by zero is not allowed.")
+    else:
+        print("The quotient is: ", a / b)
 
 if choice == "1":
     add(num1, num2)
