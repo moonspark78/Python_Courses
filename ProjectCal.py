@@ -8,5 +8,9 @@ print("4) is for Division")
 
 choice = (input("Enter your choice: "))
 
+
+def add(a, b):
+
+
 if choice == 1:
     add(num1, num2)
