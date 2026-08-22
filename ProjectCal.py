@@ -20,3 +20,5 @@ if choice == "1":
     add(num1, num2)
 elif choice == "2":
     multi(num1, num2)
+elif choice == "3":
+    sub(num1, num2)
