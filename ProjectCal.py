@@ -19,7 +19,8 @@ def sub(a, b):
     print("The difference is: ", a - b)
     
 def div(a, b):
-    
+    if b == 0:
+        print("Error: Division by zero is not allowed.")
 
 if choice == "1":
     add(num1, num2)
