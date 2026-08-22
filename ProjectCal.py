@@ -10,6 +10,7 @@ choice = (input("Enter your choice: "))
 
 
 def add(a, b):
+    print("The sum is: ", a + b)
 
 
 if choice == 1:
