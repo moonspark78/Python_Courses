@@ -15,6 +15,8 @@ def add(a, b):
 def multi(a, b):
     print("The product is: ", a * b)
 
+def sub(a, b):
+    print("The difference is: ", a - b)
 
 if choice == "1":
     add(num1, num2)
