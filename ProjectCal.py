@@ -13,5 +13,5 @@ def add(a, b):
     print("The sum is: ", a + b)
 
 
-if choice == 1:
+if choice == "1":
     add(num1, num2)
