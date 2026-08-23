@@ -5,3 +5,4 @@ Lists are ordered, changeable, and allow duplicate values. They are defined by e
 
 a= [1, 2, 3, 4, 5]  # A list of integers
 print(a)  # Output: [1, 2, 3, 4, 5]
+print(type(a))  # Output: <class 'list'>
