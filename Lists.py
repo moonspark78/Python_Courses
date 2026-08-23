@@ -23,3 +23,17 @@ Nature : Structure mutable (modifiable en place), ordonnée et multi-type.
 
 def ma_fonction():
     return "résultat"
+
+# Liste regroupant la majorité des types courants
+elements = [
+    42,                      # int
+    3.14,                    # float
+    "chaine",                # str
+    True,                    # bool
+    None,                    # NoneType
+    [1, 2],                  # list (imbriquée)
+    (3, 4),                  # tuple
+    {"nom": "Alice"},        # dict
+    {5, 6},                  # set
+    ma_fonction              # function
+]
