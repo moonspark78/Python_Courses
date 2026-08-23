@@ -32,3 +32,5 @@ elif choice == "3":
     multi(num1, num2)
 elif choice == "4":
     div(num1, num2)
+else:
+    print("Invalid choice. Please select a valid operation.")
