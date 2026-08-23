@@ -41,3 +41,4 @@ elements = [
 # Accès et exécution selon le type :
 print(elements[2].upper())   # -> "CHAINE" (méthode str)
 print(elements[5][0])        # -> 1 (élément de la sous-liste)
+print(elements[7]["nom"])    # -> "Alice" (valeur du dict)
