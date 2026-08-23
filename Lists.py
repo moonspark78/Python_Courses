@@ -20,3 +20,6 @@ Fonctions clés : len(l) (taille), l.sort() (tri en place), x in l (test de pré
 Compréhension : [x**2 for x in l if x > 0] (création et filtrage concis).
 Nature : Structure mutable (modifiable en place), ordonnée et multi-type.
 """
+
+def ma_fonction():
+    return "résultat"
