@@ -43,3 +43,7 @@ print(elements[2].upper())   # -> "CHAINE" (méthode str)
 print(elements[5][0])        # -> 1 (élément de la sous-liste)
 print(elements[7]["nom"])    # -> "Alice" (valeur du dict)
 print(elements[9]())         # -> "résultat" (appel de la fonction)
+
+
+#     0   1   2   3     4
+a1 = [12, 56, 88, 6756, 710]
