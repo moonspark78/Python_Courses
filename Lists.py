@@ -52,3 +52,4 @@ print(a1[0], a1[4])
 fruits = ["pomme", "banane", "cerise"]
 # Accès aux éléments de la liste
 print(fruits[0])  # Output: "pomme"
+print(fruits[1])  # Output: "banane"
