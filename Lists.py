@@ -48,3 +48,6 @@ print(elements[9]())         # -> "résultat" (appel de la fonction)
 #     0   1   2   3     4
 a1 = [12, 56, 88, 6756, 710]
 print(a1[0], a1[4]) 
+
+fruits = ["pomme", "banane", "cerise"]
+# Accès aux éléments de la liste
