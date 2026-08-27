@@ -21,3 +21,4 @@ prenoms.pop(2)
 print(prenoms)
 
 #Pour vider la liste, on peut utiliser la méthode clear().
+fruits.clear()
