@@ -23,3 +23,5 @@ print(prenoms)
 #Pour vider la liste, on peut utiliser la méthode clear().
 fruits.clear()
 print(fruits)
+
+prenoms.index("Jane")  # Renvoie l'index de "Jane" dans la liste prenoms
