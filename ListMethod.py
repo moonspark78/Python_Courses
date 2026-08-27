@@ -17,3 +17,4 @@ print(fruits)
 
 prenoms=["John", "Jane", "Jim", "Jill"]
 #Si je veux supprimer le prénom "Jim" qui est à l'index 2, je peux utiliser la méthode pop() avec l'index correspondant.
+prenoms.pop(2)
