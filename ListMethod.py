@@ -26,3 +26,5 @@ print(fruits)
 
 prenoms.index("Jane")  # Renvoie l'index de "Jane" dans la liste prenoms
 print(prenoms.index("Jane"))  # Affiche l'index de "Jane"
+
+prenoms.count("John")  # Compte combien de fois "John" apparaît dans la liste prenoms
