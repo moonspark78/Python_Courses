@@ -13,3 +13,4 @@ print("---------")
 print("---------")
 fruits.pop()
 print(fruits)
+# Si maintenant on veux supprimer ave cun index,
