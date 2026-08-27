@@ -22,3 +22,4 @@ print(prenoms)
 
 #Pour vider la liste, on peut utiliser la méthode clear().
 fruits.clear()
+print(fruits)
