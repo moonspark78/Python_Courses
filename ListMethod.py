@@ -14,3 +14,5 @@ print("---------")
 fruits.pop()
 print(fruits)
 # Si maintenant on veux supprimer ave cun index,
+
+prenoms=["John", "Jane", "Jim", "Jill"]
