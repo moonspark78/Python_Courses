@@ -33,3 +33,4 @@ print(prenoms.count("John"))  # Affiche le nombre d'occurrences de "
 #-------------------------------------------------------
 legumes=["carotte", "brocoli", "épinard", "poivron"]
 legumesCopy=legumes.copy()  # Crée une copie de la liste legumes
+print(legumesCopy)  # Affiche la copie de la liste legumes
