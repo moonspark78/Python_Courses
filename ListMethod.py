@@ -38,3 +38,5 @@ print(legumesCopy)  # Affiche la copie de la liste legumes
 #-------------------------------------------------------
 legumes.sort()  # Trie la liste legumes par ordre alphabétique
 print(legumes)  # Affiche la liste legumes triée
+#-------------------------------------------------------
+number=[12,4,8,8,75,9,82,4,73,89]
