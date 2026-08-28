@@ -37,3 +37,4 @@ print(legumesCopy)  # Affiche la copie de la liste legumes
 
 #-------------------------------------------------------
 legumes.sort()  # Trie la liste legumes par ordre alphabétique
+print(legumes)  # Affiche la liste legumes triée
