@@ -44,3 +44,4 @@ number.sort()  # Trie la liste number par ordre croissant
 print(number)  # Affiche la liste number triée
 
 number.sort(reverse=True)  # Trie la liste number par ordre décroissant
+print(number)  # Affiche la liste number triée en ordre décroissant
