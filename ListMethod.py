@@ -42,3 +42,5 @@ print(legumes)  # Affiche la liste legumes triée
 number=[12,4,8,8,75,9,82,4,73,89]
 number.sort()  # Trie la liste number par ordre croissant
 print(number)  # Affiche la liste number triée
+
+number.sort(reverse=True)  # Trie la liste number par ordre décroissant
