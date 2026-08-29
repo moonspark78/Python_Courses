@@ -3,3 +3,5 @@ Tuples are immutable sequences, typically used to store collections of heterogen
 They are similar to lists, but unlike lists, they cannot be changed after their creation.
 Tuples are defined by enclosing the elements in parentheses `()`, and they can contain any number of elements, including zero.
 """
+
+a=(12,235,22,4,19)
