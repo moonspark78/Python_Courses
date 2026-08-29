@@ -8,3 +8,7 @@ a=(12,235,22,4,19)
 print(a)
 print(a[2])  # Accessing the third element of the tuple
 print(a[1], a[3])  # Accessing the second and fourth elements of the tuple
+
+print("---------------------------")
+print("---------------------------")
+print("---------------------------")
