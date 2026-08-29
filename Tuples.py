@@ -12,3 +12,6 @@ print(a[1], a[3])  # Accessing the second and fourth elements of the tuple
 print("---------------------------")
 print("---------------------------")
 print("---------------------------")
+
+for i in a:
+    print(i)  # Iterating through the tuple and printing each element
