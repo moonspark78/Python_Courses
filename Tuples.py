@@ -5,3 +5,4 @@ Tuples are defined by enclosing the elements in parentheses `()`, and they can c
 """
 
 a=(12,235,22,4,19)
+print(a)
