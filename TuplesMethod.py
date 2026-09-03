@@ -14,3 +14,5 @@ user.clear()  # Clearing all items from the dictionary
 
 user_backup = user.copy()  # Creating a copy of the cleared dictionary
 print(user_backup)  # Output: {}, the copied dictionary is also empty
+
+print(user.keys())
