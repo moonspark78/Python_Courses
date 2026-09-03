@@ -17,3 +17,4 @@ print(user_backup)  # Output: {}, the copied dictionary is also empty
 
 print(user.keys())
 print(user.values())
+print(user.items())
