@@ -11,3 +11,5 @@ print(len(a))  # Output: 10, the length of the list after insertion
 print("---------------------------")
 user={"name": "John", "age": 30, "city": "New York"}
 user.clear()  # Clearing all items from the dictionary
+
+user_backup = user.copy()  # Creating a copy of the cleared dictionary
