@@ -26,3 +26,5 @@ user.update({"Address": "23 Street no 7", "Job": "Engineer"})  # Adding new key-
 print(user)  # Output: {'Address': '23 Street no 7'}
 
 print(len(user))  # Output: 2, the length of the dictionary after adding new items
+
+#Pour supprimer le dernier élément d'un dictionnaire, vous pouvez utiliser la méthode popitem(). Voici un exemple :
