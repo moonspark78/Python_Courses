@@ -28,3 +28,4 @@ print(user)  # Output: {'Address': '23 Street no 7'}
 print(len(user))  # Output: 2, the length of the dictionary after adding new items
 
 #Pour supprimer le dernier élément d'un dictionnaire, vous pouvez utiliser la méthode popitem(). Voici un exemple :
+user.popitem()  # Removing the last inserted item from the dictionary
