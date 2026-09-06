@@ -23,3 +23,4 @@ print(user.items())
 ou simplement assigner de nouvelles paires clé-valeur. Voici un exemple : """
 
 user.update({"Address": "23 Street no 7"})
+print(user)  # Output: {'Address': '23 Street no 7'}
