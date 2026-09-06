@@ -22,5 +22,5 @@ print(user.items())
 """ Maintenant pour rajouter des éléments à un dictionnaire, vous pouvez utiliser la méthode update()
 ou simplement assigner de nouvelles paires clé-valeur. Voici un exemple : """
 
-user.update({"Address": "23 Street no 7"})
+user.update({"Address": "23 Street no 7", "Job": "Engineer"})  # Adding new key-value pairs to the dictionary
 print(user)  # Output: {'Address': '23 Street no 7'}
