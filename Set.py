@@ -7,3 +7,5 @@ meaning you can add or remove elements from them, but they do not allow duplicat
 a = {23, 11, 39, 42, 15}
 print(type(a))  # Output: <class 'set'>
 print(a)  # Output: {11, 42, 15, 23, 39}, the order may vary since sets are unordered
+
+b = { "apple", "banana", "cherry"}
