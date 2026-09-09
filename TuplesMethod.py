@@ -41,3 +41,5 @@ for i in user.keys():
     
 for i in user.values():
     print(i)  # Output: 23 Street no 7, Engineer
+    
+for key, value in user.items():
