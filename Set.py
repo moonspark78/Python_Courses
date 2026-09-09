@@ -9,3 +9,5 @@ print(type(a))  # Output: <class 'set'>
 print(a)  # Output: {11, 42, 15, 23, 39}, the order may vary since sets are unordered
 
 b = { "apple", "banana", "cherry"}
+for item in b:
+    print(item)  # Output: apple, banana, cherry (order may vary)
