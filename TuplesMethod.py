@@ -38,3 +38,6 @@ print(user)  # Output: {'Address': '23 Street no 7'}, the dictionary
 pearson = {"name": "Alice", "age": 25, "city": "Los Angeles"}
 for i in user.keys():
     print(i)  # Output: Address, Job
+    
+for i in user.values():
+    print(i)  # Output: 23 Street no 7, Engineer
