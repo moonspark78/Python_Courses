@@ -5,3 +5,4 @@ meaning you can add or remove elements from them, but they do not allow duplicat
 """
 
 a = {23, 11, 39, 42, 15}
+print(type(a))  # Output: <class 'set'>
