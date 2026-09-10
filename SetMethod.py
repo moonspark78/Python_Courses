@@ -7,3 +7,6 @@ L'ordre des éléments dans l'ensemble peut varier car les ensembles sont non or
 #pour ajouter plusieurs éléments à la fois, vous pouvez utiliser la méthode update()
 # 
 # avec un autre ensemble ou un itérable (comme une liste ou un tuple) comme argument. Par exemple :
+
+a.update({100, 200, 300})  # Adding multiple elements to the set
+print(a)
