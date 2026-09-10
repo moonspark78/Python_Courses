@@ -10,3 +10,10 @@ L'ordre des éléments dans l'ensemble peut varier car les ensembles sont non or
 
 a.update({100, 200, 300})  # Adding multiple elements to the set
 print(a)
+
+
+print("-------------------------------------------")
+print("-------------------------------------------")
+
+a.clear()  # Removing all elements from the set
+print(a)  # Output: set(), the set is now empty
