@@ -3,3 +3,7 @@ a.add(99)  # Adding an element to the set
 print(a) 
 """ il ajoute l'élément 99 à l'ensemble a.
 L'ordre des éléments dans l'ensemble peut varier car les ensembles sont non ordonnés. """
+
+#pour ajouter plusieurs éléments à la fois, vous pouvez utiliser la méthode update()
+# 
+# avec un autre ensemble ou un itérable (comme une liste ou un tuple) comme argument. Par exemple :
