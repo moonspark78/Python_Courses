@@ -30,3 +30,7 @@ b.discard(7)  # Removing an element from the set
 print(b)  # Output: {11, 3, 9}, the element
 
 b.discard(20)  # Attempting to discard an element that does not exist in the set
+
+print("-------------------------------------------")
+print("-------------------------------------------")
+
