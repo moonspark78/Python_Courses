@@ -19,3 +19,4 @@ a.clear()  # Removing all elements from the set
 print(a)  # Output: set(), the set is now empty
 
 b = {11, 3, 5, 7, 9}
+b.remove(5)  # Removing an element from the set
