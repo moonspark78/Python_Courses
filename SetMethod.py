@@ -26,3 +26,5 @@ b.remove(15)  # Attempting to remove an element that does not exist in the set
 print(b)  # Output: {11, 3, 7, 9}, the set remains unchanged
 
 # discard() method can be used to remove an element from the set without raising an error if the element does not exist. For example:
+b.discard(7)  # Removing an element from the set
+print(b)  # Output: {11, 3, 9}, the element
