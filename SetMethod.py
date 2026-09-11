@@ -17,3 +17,5 @@ print("-------------------------------------------")
 
 a.clear()  # Removing all elements from the set
 print(a)  # Output: set(), the set is now empty
+
+b = {11, 3, 5, 7, 9}
