@@ -23,3 +23,4 @@ b.remove(5)  # Removing an element from the set
 print(b)  # Output: {11, 3, 7, 9},
 
 b.remove(15)  # Attempting to remove an element that does not exist in the set
+print(b)  # Output: {11, 3, 7, 9}, the set remains unchanged
