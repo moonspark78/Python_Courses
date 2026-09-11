@@ -34,3 +34,6 @@ b.discard(20)  # Attempting to discard an element that does not exist in the set
 print("-------------------------------------------")
 print("-------------------------------------------")
 
+s = {12, 4,56,120}
+t = {12, 4,6,100}
+
