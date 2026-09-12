@@ -39,3 +39,5 @@ t = {12, 4,6,100}
 c = s.intersection(t)  # Finding the intersection of two sets
 print(c)  # Output: {12, 4}, the common elements in both sets
 
+
+e= s.union(t)  # Finding the union of two sets
