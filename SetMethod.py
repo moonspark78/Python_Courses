@@ -41,3 +41,4 @@ print(c)  # Output: {12, 4}, the common elements in both sets
 
 
 e= s.union(t)  # Finding the union of two sets
+print(e)  # Output: {4, 6, 12, 56,
