@@ -9,5 +9,6 @@ print("---------------------------")
 
 a=[12,2,15,32,87,66]
 random.shuffle(a)
+print(a)  # Output: The list 'a' shuffled in random order
 
 
