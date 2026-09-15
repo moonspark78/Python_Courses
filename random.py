@@ -13,3 +13,4 @@ print(a)  # Output: The list 'a' shuffled in random order
 
 
 chars= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+print(random.choice(chars))  # Output: A random character from the string 'chars'
