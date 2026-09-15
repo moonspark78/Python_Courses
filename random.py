@@ -12,3 +12,4 @@ random.shuffle(a)
 print(a)  # Output: The list 'a' shuffled in random order
 
 
+chars= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
