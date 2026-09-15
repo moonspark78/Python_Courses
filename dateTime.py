@@ -9,4 +9,5 @@ print(t)  # Output: Current date and time in the format YYYY-MM-DD HH:MM:SS.mmmm
 
 
 month=datetime.datetime.now().month
+print(month)  # Output: Current month as an integer (1-12)
 
