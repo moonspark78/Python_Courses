@@ -20,3 +20,5 @@ print(month)  # Output: Current month as an integer (1-12)
 # %H -> Hour (24-hour clock) as a zero-padded decimal number (00-23)
 # %M -> Minute as a zero-padded decimal number (00-59)
 # %S -> Second as a zero-padded decimal number (00-59)
+
+print(datetime.datetime.now().strftime("%A"))
