@@ -22,3 +22,4 @@ print(month)  # Output: Current month as an integer (1-12)
 # %S -> Second as a zero-padded decimal number (00-59)
 
 print(datetime.datetime.now().strftime("%A"))
+print(datetime.datetime.now().strftime("%B %Y"))
