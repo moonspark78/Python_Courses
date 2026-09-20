@@ -1,1 +1,1 @@
-file=open("demo.txt")
+file=open("demo.txt","r")
