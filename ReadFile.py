@@ -5,3 +5,6 @@ file.close()
 
 print("------------------------------------")
 print(file.read(9)) # This will raise an error because the file is closed
+
+print("------------------------------------")
+print(file.readline()) # This will also raise an error because the file is closed
