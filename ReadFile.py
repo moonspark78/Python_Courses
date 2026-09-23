@@ -15,5 +15,6 @@ print(file.readline()) # This will also raise an error because the file is close
 
 
 print("------------------------------------")
-dor i in range(5):
+for i in range(5):
     print(file.readline()) # This will also raise an error because the file is closed
+file.close()
