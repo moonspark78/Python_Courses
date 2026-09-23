@@ -12,3 +12,8 @@ print(file.readline()) # This will also raise an error because the file is close
 print(file.readline()) # This will also raise an error because the file is closed
 print(file.readline()) # This will also raise an error because the file is closed
 print(file.readline()) # This will also raise an error because the file is closed
+
+
+print("------------------------------------")
+dor i in range(5):
+    print(file.readline()) # This will also raise an error because the file is closed
