@@ -9,3 +9,8 @@ print(lines[0],lines[1])
 
 for i in lines:
     print(i)
+    
+    
+print("---------------------------------------------")
+for i in lines[3:7]:
+    print(i, end="")
