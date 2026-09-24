@@ -4,3 +4,4 @@ print(file.readline())
 
 print("---------------------------------------------")
 lines=file.readlines()
+print(lines)
