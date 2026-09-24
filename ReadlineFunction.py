@@ -6,3 +6,6 @@ print("---------------------------------------------")
 lines=file.readlines()
 print(lines)
 print(lines[0],lines[1])
+
+for i in lines:
+    print(i)
