@@ -16,4 +16,4 @@ except:
     
     
 print("the execution continues after the error handling")
-print(12/0)
+print(12/0) # This line will raise a ZeroDivisionError and terminate the program since it is not within a try-except block.
