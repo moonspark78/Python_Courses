@@ -5,3 +5,6 @@ The are 2 major types of errors in Python:
 They can be caused by various issues such as division by zero, accessing a non-existent index in a list,
 or calling a function with incorrect arguments.
 """
+
+print(12/0)
+print("hello")
