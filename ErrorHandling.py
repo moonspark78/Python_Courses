@@ -8,3 +8,7 @@ or calling a function with incorrect arguments.
 
 print(12/0)
 print("hello")
+
+try:
+    print(12/0)
+    
