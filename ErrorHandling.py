@@ -22,3 +22,4 @@ print(12/0) # This line will raise a ZeroDivisionError and terminate the program
 print("----------------------------------------------------------   ")
 try:
     print(12/0)
+except ZeroDivisionError as e::
