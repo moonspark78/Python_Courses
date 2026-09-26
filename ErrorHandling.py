@@ -11,4 +11,5 @@ print("hello")
 
 try:
     print(12/0)
-    
+except:
+    print("An error occurred")
