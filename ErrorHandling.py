@@ -16,3 +16,4 @@ except:
     
     
 print("the execution continues after the error handling")
+print(12/0)
