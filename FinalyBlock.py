@@ -17,3 +17,6 @@ It is typically used for cleanup actions that must be executed under all circums
 
 a= int(input("Enter the first number: "))
 b= int(input("Enter the second number: "))
+
+try:
+    
