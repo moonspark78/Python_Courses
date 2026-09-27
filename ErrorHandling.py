@@ -24,3 +24,5 @@ try:
     print(12/0)
 except ZeroDivisionError as e:
     print(e)
+else: 
+    print("No run time error occurred")
