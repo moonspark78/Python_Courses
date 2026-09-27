@@ -3,3 +3,4 @@ try:
 except:
     print("cannot divide by zero")
 finally:
+    print("Code continues ....")
