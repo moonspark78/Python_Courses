@@ -20,3 +20,4 @@ b= int(input("Enter the second number: "))
 
 try:
     print(a/b)
+except ZeroDivisionError as e:
