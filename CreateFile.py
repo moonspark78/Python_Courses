@@ -1,0 +1,1 @@
+file=open("dumm12.txt","w")
