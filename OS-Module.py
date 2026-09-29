@@ -11,3 +11,8 @@ for i in os.listdir():
     
 print("-----------------------------")
 print(os.listdir("c:"))
+
+""" 
+os module provides a way of using operating system dependent functionality.
+
+"""
