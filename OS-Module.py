@@ -10,3 +10,4 @@ for i in os.listdir():
     print(i)
     
 print("-----------------------------")
+print(os.listdir("c:"))
