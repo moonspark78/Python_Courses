@@ -21,3 +21,4 @@ print(os.rmdir("test"))  # Remove a directory
 print(os.rmdir("files")) 
 
 print(os.path.exists("hello.py"))   
+print(os.system("dir"))  # Execute a command in the system shell
