@@ -4,3 +4,4 @@ including copying, moving, and removing files and directories. It also includes 
 """
 
 import shutil
+shutil.copy("hello.py", "files")  # Copy a file to a directory
