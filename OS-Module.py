@@ -19,3 +19,5 @@ The os and os.path modules include many functions to interact with the file syst
 
 print(os.rmdir("test"))  # Remove a directory
 print(os.rmdir("files")) 
+
+print(os.path.exists("hello.py"))   
