@@ -5,3 +5,5 @@ including copying, moving, and removing files and directories. It also includes 
 
 import shutil
 shutil.copy("hello.py", "files")  # Copy a file to a directory
+
+shutil.copytree("files","files_copy")  # Copy an entire directory tree to a new location
