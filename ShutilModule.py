@@ -7,3 +7,5 @@ import shutil
 shutil.copy("hello.py", "files")  # Copy a file to a directory
 
 shutil.copytree("files","files_copy")  # Copy an entire directory tree to a new location
+
+shutil.rmtree("files_copy")  # Remove an entire directory tree
