@@ -8,3 +8,7 @@ def mac_gen():
     for i in range(1, 12 +1):
         macaddr = macaddr + random.choice(charset)
         print(macaddr)
+        
+        
+        
+mac_gen()
