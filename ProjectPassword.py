@@ -10,5 +10,6 @@ def pass_gen(plen):
 
 plen = int(input("Enter the length of the password: "))
 if plen < 8:
+    print("Password length should be at least 8 characters.")
 
 print("Your password is: " + pass_gen(plen))
