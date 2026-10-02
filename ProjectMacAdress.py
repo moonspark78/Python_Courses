@@ -3,3 +3,5 @@ import random
 
 def mac_gen():
     macaddr = ""
+    counter = 0
+    charset= "1234567890abcdef"
