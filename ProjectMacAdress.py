@@ -5,3 +5,4 @@ def mac_gen():
     macaddr = ""
     counter = 0
     charset= "1234567890abcdef"
+    for i in range(1, 12 +1):
