@@ -6,8 +6,7 @@ def pass_gen(plen):
     
     for i in range(1, plen+1):
         password += random.choice(characters)
-        
-        
+        print(password)
         
 
 plen = int(input("Enter the length of the password: "))
