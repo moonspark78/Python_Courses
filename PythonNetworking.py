@@ -14,4 +14,4 @@ try:
     sock.connect(("www.google.com", 80))
     print("Connected to www.google.com on port 80")
 except socket.error:
-    
+    print("Failed to connect to www.google.com on port 80")
