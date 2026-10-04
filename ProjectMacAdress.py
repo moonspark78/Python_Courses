@@ -14,4 +14,4 @@ def mac_gen():
         print(macaddr)
 
         
-mac_gen()
+mac =mac_gen()
