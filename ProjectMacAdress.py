@@ -11,8 +11,8 @@ def mac_gen():
         if count == 2:
             macaddr = macaddr + "-"
             count = 0
-        print(macaddr)
+    return macaddr
 
-        
-mac =mac_gen()
-print(mac[:-1].upper())
+for i in range(1, 20 +1):        
+    mac =mac_gen()
+    print(mac[:-1].upper())
