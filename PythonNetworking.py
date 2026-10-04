@@ -6,3 +6,8 @@ including TCP, UDP, and raw sockets, and allows developers to create both client
 It also provides methods for sending and receiving data,
 as well as for configuring socket options such as timeouts and buffer sizes.
 """
+
+import socket
+
+try: 
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
