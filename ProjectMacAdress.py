@@ -15,3 +15,4 @@ def mac_gen():
 
         
 mac =mac_gen()
+print(mac[:-1])
