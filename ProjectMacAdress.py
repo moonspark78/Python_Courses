@@ -6,6 +6,7 @@ def mac_gen():
     count = 0
     charset= "1234567890abcdef"
     for i in range(1, 12 +1):
+        count += 1
         macaddr = macaddr + random.choice(charset)
         print(macaddr)
 
