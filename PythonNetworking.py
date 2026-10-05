@@ -17,3 +17,4 @@ try:
 except socket.error:
     print("Failed to connect to www.google.com on port 80")
 finally:
+    sock.close()
