@@ -18,3 +18,4 @@ if __name__ == "__main__":
 while True:
     try:
         ip = socket.gethostbyname("google.com")
+        print(ip)
