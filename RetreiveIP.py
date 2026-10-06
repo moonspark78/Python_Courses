@@ -9,3 +9,4 @@ except socket.gaierror:
 
 if __name__ == "__main__":
     try:
+        ip = socket.gethostbyname("google.com")
