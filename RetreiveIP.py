@@ -29,3 +29,7 @@ if __name__ == "__main__":
         print(ip)
     except socket.gaierror:
         print("Failed to retrieve IP address for google.com")
+        
+        
+
+while True:
