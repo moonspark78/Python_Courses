@@ -38,3 +38,6 @@ while True:
         print(ip)
     except socket.gaierror:
         print("Failed to retrieve IP address for google.com")
+        
+        
+for i in range(5):
