@@ -23,3 +23,5 @@ def get_ip_address(hostname):
     try:
         ip = socket.gethostbyname(hostname)
         return ip
+    except socket.gaierror:
+          return None
