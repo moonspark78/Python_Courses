@@ -20,3 +20,6 @@ if __name__ == "__main__":
         
 
 def get_ip_address(hostname):
+    try:
+        ip = socket.gethostbyname(hostname)
+  
