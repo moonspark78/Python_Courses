@@ -1,3 +1,5 @@
+from operator import ge
+
 import shapely
 
 while True:
@@ -14,3 +16,7 @@ if __name__ == "__main__":
         print(ip)
     except socket.gaierror:
         print("Failed to retrieve IP address for google.com")
+        
+        
+
+def get_ip_address(hostname):
