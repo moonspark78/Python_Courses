@@ -42,3 +42,4 @@ while True:
         
 for i in range(5):
     try:
+        ip = socket.gethostbyname("google.com")
