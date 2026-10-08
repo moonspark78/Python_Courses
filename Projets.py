@@ -7,3 +7,5 @@ while True:
     except socket.gaierror:
         print("Failed to retrieve IP address for google.com")
 
+
+if __name__ == "__main__":
