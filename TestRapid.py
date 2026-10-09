@@ -5,3 +5,5 @@ data = {
      "temperature": [22, 18, 15, 25, 20],
      "humidity": [60, 70, 80, 55, 65]
     }
+
+df = pd.DataFrame(data)
