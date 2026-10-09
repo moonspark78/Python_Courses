@@ -9,3 +9,4 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 print(df["temperature"].mean())
+print(df[df["temperature"] > 20])
