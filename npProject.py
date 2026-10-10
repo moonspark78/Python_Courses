@@ -26,3 +26,4 @@ print("Max revenue:", revenue.max())
 print("Expensive products:", products[prices > 850])
 
 # Chiffre d'affaires supérieur à 3000€
+print("High revenue:", revenue[revenue > 3000])
