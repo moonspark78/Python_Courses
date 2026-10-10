@@ -10,3 +10,5 @@ revenue = prices * quantities
 
 print("Products:", products)
 print("Prices:", prices)
+print("Quantities:", quantities)
+print("Revenue:", revenue)
