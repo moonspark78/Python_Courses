@@ -15,3 +15,6 @@ print("Revenue:", revenue)
 
 # Prix moyen
 print("Average price:", prices.mean())
+
+# Quantité totale vendue
+print("Total quantity:", quantities.sum())
