@@ -6,3 +6,7 @@ quantities = np.array([2, 5, 3, 1, 4])
 
 # Calcul du chiffre d'affaires par produit
 revenue = prices * quantities
+
+
+print("Products:", products)
+print("Prices:", prices)
