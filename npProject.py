@@ -20,3 +20,4 @@ print("Average price:", prices.mean())
 print("Total quantity:", quantities.sum())
 
 # Produit avec le plus gros chiffre d'affaires
+print("Max revenue:", revenue.max())
