@@ -16,3 +16,4 @@ def analyze_sales(products, prices, quantities):
     best_revenue = revenue[max_revenue_index]
 
     expensive_products = products[prices > 850]
+    high_revenue = revenue[revenue > 3000]
