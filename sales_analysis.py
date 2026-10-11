@@ -17,3 +17,9 @@ def analyze_sales(products, prices, quantities):
 
     expensive_products = products[prices > 850]
     high_revenue = revenue[revenue > 3000]
+    
+    return {
+        "total_revenue": total_revenue,
+        "total_quantity": total_quantity,
+        "average_price": average_price,
+    }
