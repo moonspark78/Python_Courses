@@ -6,3 +6,7 @@ quantities = np.array([2, 5, 3, 1, 8, 2])
 
 def analyze_sales(products, prices, quantities):
     revenue = prices * quantities
+    
+    total_revenue = revenue.sum()
+    total_quantity = quantities.sum()
+    average_price = prices.mean()
