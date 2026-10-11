@@ -22,4 +22,8 @@ def analyze_sales(products, prices, quantities):
         "total_revenue": total_revenue,
         "total_quantity": total_quantity,
         "average_price": average_price,
+        "best_product": best_product,
+        "best_revenue": best_revenue,
+        "expensive_products": expensive_products,
+        "high_revenue": high_revenue
     }
