@@ -13,3 +13,6 @@ def analyze_sales(products, prices, quantities):
     
     max_revenue_index = revenue.argmax()
     best_product = products[max_revenue_index]
+    best_revenue = revenue[max_revenue_index]
+
+    expensive_products = products[prices > 850]
