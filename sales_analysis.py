@@ -27,3 +27,5 @@ def analyze_sales(products, prices, quantities):
         "expensive_products": expensive_products,
         "high_revenue": high_revenue
     }
+    
+results = analyze_sales(products, prices, quantities)
