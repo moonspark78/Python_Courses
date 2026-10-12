@@ -17,4 +17,5 @@ def analyze_sales(df):
         "average_price": df["price"].mean(),
          "best_product": df.loc[df["revenue"].idxmax(), "product"],
          "best_revenue": df["revenue"].max(),
+         "expensive_products": df.loc[df["price"] > 850, "product"].values,
     }
