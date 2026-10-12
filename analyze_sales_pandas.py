@@ -18,4 +18,5 @@ def analyze_sales(df):
          "best_product": df.loc[df["revenue"].idxmax(), "product"],
          "best_revenue": df["revenue"].max(),
          "expensive_products": df.loc[df["price"] > 850, "product"].values,
+         "high_revenue": df.loc[df["revenue"] > 3000, "revenue"].values
     }
