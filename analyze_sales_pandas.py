@@ -15,4 +15,5 @@ def analyze_sales(df):
         "total_revenue": df["revenue"].sum(),
         "total_quantity": df["quantity"].sum(),
         "average_price": df["price"].mean(),
+         "best_product": df.loc[df["revenue"].idxmax(), "product"],
     }
