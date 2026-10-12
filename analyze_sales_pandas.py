@@ -9,4 +9,4 @@ df = pd.DataFrame({
 
 
 def analyze_sales(df):
-    
+    df["revenue"] = df["price"] * df["quantity"]
