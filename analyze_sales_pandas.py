@@ -10,3 +10,9 @@ df = pd.DataFrame({
 
 def analyze_sales(df):
     df["revenue"] = df["price"] * df["quantity"]
+    
+    return {
+        "total_revenue": df["revenue"].sum(),
+        "total_quantity": df["quantity"].sum(),
+        "average_price": df["price"].mean(),
+    }
