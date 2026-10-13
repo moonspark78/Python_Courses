@@ -16,4 +16,5 @@ def analyze_sales(products, prices, quantities):
     return {
         "total_revenue": revenue.sum(),
         "total_quantity": quantities.sum(),
+        "average_price": prices.mean(),
      }
