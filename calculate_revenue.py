@@ -24,3 +24,4 @@ def analyze_sales(products, prices, quantities):
     }
     
 result = analyze_sales(products, prices, quantities)
+print(result)
