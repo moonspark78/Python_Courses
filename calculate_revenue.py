@@ -20,4 +20,5 @@ def analyze_sales(products, prices, quantities):
         "best_product": products[revenue.argmax()],
         "best_revenue": revenue.max(),
         "expensive_products": products[prices > 850],
+        "high_revenue": revenue[revenue > 3000]
      }
