@@ -17,4 +17,6 @@ def analyze_sales(products, prices, quantities):
         "total_revenue": revenue.sum(),
         "total_quantity": quantities.sum(),
         "average_price": prices.mean(),
+        "best_product": products[revenue.argmax()],
+        "best_revenue": revenue.max(),
      }
