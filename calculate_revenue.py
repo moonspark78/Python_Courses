@@ -12,3 +12,8 @@ def calculate_revenue(prices, quantities):
 
 def analyze_sales(products, prices, quantities):
     revenue = calculate_revenue(prices, quantities)
+    
+    return {
+        "total_revenue": revenue.sum(),
+        "total_quantity": quantities.sum(),
+     }
