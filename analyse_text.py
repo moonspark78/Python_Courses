@@ -17,4 +17,4 @@ def trouver_mots_longs(texte):
 
 
 def analyser_texte(texte):
-    
+    print("Nombre de mots :", compter_mots(texte))
