@@ -5,3 +5,6 @@ def nettoyer_texte(texte):
 
 def compter_mots(texte):
     return len(texte.split())
+
+
+def compter_occurrences(texte, mot):
