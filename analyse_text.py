@@ -28,3 +28,4 @@ analyser_texte(texte)
 
 def main():
     texte = input("Entrez un texte à analyser : ")
+    analyser_texte(texte)
