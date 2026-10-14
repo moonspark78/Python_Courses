@@ -8,3 +8,4 @@ def compter_mots(texte):
 
 
 def compter_occurrences(texte, mot):
+    mots = nettoyer_texte(texte).split()
