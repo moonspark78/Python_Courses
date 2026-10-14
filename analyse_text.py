@@ -14,3 +14,7 @@ def compter_occurrences(texte, mot):
 
 def trouver_mots_longs(texte):
     return [mot for mot in texte.split() if len(mot) > 5]
+
+
+def analyser_texte(texte):
+    
