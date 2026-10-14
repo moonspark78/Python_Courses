@@ -10,3 +10,6 @@ def compter_mots(texte):
 def compter_occurrences(texte, mot):
     mots = nettoyer_texte(texte).split()
     return mots.count(mot.lower())
+
+
+def trouver_mots_longs(texte):
