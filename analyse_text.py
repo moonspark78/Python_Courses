@@ -23,3 +23,4 @@ def analyser_texte(texte):
     
     
 texte = "Python est un langage puissant et Python est populaire !"
+analyser_texte(texte)
