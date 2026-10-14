@@ -32,3 +32,4 @@ def main():
 
 
 def test_analyser_texte():
+    texte_test = "Python est un langage puissant et Python est populaire !"
