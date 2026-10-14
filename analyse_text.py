@@ -35,3 +35,4 @@ def test_analyser_texte():
     texte_test = "Python est un langage puissant et Python est populaire !"
     assert compter_mots(texte_test) == 9
     assert trouver_mots_longs(texte_test) == ["langage", "puissant", "populaire"]
+    assert compter_occurrences(texte_test, "Python") == 2
