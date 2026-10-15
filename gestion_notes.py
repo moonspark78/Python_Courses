@@ -18,3 +18,7 @@ def analyser_notes(notes):
     
 notes = [12, 8, 15, 17, 9, 14]
 analyser_notes(notes)
+
+
+def main():
+    saisie = input("Entrez les notes séparées par des espaces : ")
