@@ -24,3 +24,6 @@ def main():
     saisie = input("Entrez les notes séparées par des espaces : ")
     notes = [float(note) for note in saisie.split()]
     analyser_notes(notes)
+    
+def test_analyser_notes():
+    notes_test = [12, 8, 15, 17, 9, 14]
