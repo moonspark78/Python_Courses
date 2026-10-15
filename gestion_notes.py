@@ -13,3 +13,5 @@ def compter_reussites(notes):
 def analyser_notes(notes):
     print("Moyenne :", calculer_moyenne(notes))
     print("Meilleure note :", note_maximale(notes))
+    print("Note minimale :", note_minimale(notes))
+    print("Nombre de réussites :", compter_reussites(notes))
