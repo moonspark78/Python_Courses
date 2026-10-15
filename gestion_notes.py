@@ -27,3 +27,5 @@ def main():
     
 def test_analyser_notes():
     notes_test = [12, 8, 15, 17, 9, 14]
+    assert calculer_moyenne(notes_test) == 12.5
+    assert note_maximale(notes_test) == 17
