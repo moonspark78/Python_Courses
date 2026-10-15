@@ -5,3 +5,4 @@ def note_maximale(notes):
     return max(notes) if notes else 0
 
 def note_minimale(notes):
+    return min(notes) if notes else 0
