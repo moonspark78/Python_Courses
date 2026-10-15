@@ -8,3 +8,4 @@ def note_minimale(notes):
     return min(notes) if notes else 0
 
 def compter_reussites(notes):
+    return sum(1 for note in notes if note >= 10)
