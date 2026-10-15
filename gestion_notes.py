@@ -6,3 +6,5 @@ def note_maximale(notes):
 
 def note_minimale(notes):
     return min(notes) if notes else 0
+
+def compter_reussites(notes):
