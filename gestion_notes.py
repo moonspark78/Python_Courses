@@ -15,3 +15,5 @@ def analyser_notes(notes):
     print("Meilleure note :", note_maximale(notes))
     print("Note minimale :", note_minimale(notes))
     print("Nombre de réussites :", compter_reussites(notes))
+    
+notes = [12, 8, 15, 17, 9, 14]
