@@ -11,3 +11,5 @@ def compter_reussites(notes):
     return sum(1 for note in notes if note >= 10)
 
 def analyser_notes(notes):
+    print("Moyenne :", calculer_moyenne(notes))
+    print("Meilleure note :", note_maximale(notes))
