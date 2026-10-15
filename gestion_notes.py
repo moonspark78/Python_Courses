@@ -22,3 +22,5 @@ analyser_notes(notes)
 
 def main():
     saisie = input("Entrez les notes séparées par des espaces : ")
+    notes = [float(note) for note in saisie.split()]
+    analyser_notes(notes)
