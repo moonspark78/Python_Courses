@@ -30,3 +30,4 @@ def test_analyser_notes():
     assert calculer_moyenne(notes_test) == 12.5
     assert note_maximale(notes_test) == 17
     assert note_minimale(notes_test) == 8
+    assert compter_reussites(notes_test) == 4
