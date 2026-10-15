@@ -17,3 +17,4 @@ def analyser_notes(notes):
     print("Nombre de réussites :", compter_reussites(notes))
     
 notes = [12, 8, 15, 17, 9, 14]
+analyser_notes(notes)
