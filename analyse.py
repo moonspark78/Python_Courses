@@ -25,3 +25,4 @@ def main():
     afficher_resultats("Omar", [14, 17, 12, 19, 16])
     
 if __name__ == "__main__":
+    main()
