@@ -12,3 +12,5 @@ def trouver_meilleure_note(notes):
     return max(notes) if notes else 0
 
 
+def afficher_resultats(nom, notes):
+    table = Table(title=f"Résultats de {nom}")
