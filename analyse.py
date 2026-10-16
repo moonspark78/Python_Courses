@@ -14,3 +14,6 @@ def trouver_meilleure_note(notes):
 
 def afficher_resultats(nom, notes):
     table = Table(title=f"Résultats de {nom}")
+    table.add_column("Indicateur")
+    table.add_column("Valeur")
+    table.add_row("Notes", str(notes))
