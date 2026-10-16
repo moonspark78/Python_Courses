@@ -23,3 +23,5 @@ def afficher_resultats(nom, notes):
     
 def main():
     afficher_resultats("Omar", [14, 17, 12, 19, 16])
+    
+if __name__ == "__main__":
