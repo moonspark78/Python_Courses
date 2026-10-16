@@ -22,3 +22,4 @@ def afficher_resultats(nom, notes):
     console.print(table)
     
 def main():
+    afficher_resultats("Omar", [14, 17, 12, 19, 16])
