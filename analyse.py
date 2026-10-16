@@ -9,6 +9,6 @@ def calculer_moyenne(notes):
 
 
 def trouver_meilleure_note(notes):
-
+    return max(notes) if notes else 0
 
 
