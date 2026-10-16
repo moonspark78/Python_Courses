@@ -20,3 +20,5 @@ def afficher_resultats(nom, notes):
     table.add_row("Moyenne", f"{calculer_moyenne(notes):.2f}")
     table.add_row("Meilleure note", str(trouver_meilleure_note(notes)))
     console.print(table)
+    
+def main():
