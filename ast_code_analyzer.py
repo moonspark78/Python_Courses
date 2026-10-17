@@ -18,4 +18,5 @@ def analyze_code(source):
         "functions": functions,
         "complexity": stats["If"] + stats["For"]
         + stats["While"] + stats["Try"],
+        "node_types": stats.most_common(5)
     }
