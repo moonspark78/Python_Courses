@@ -7,3 +7,6 @@ def scan_directory(directory: str) -> list[Path]:
 
 def analyze_extensions(files: list[Path]) -> Counter:
     return Counter(file.suffix.lower() or "[sans extension]" for file in files)
+
+
+def largest_files(files: list[Path], limit: int = 5) -> list[tuple[int, Path]]:
