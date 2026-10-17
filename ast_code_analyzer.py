@@ -13,3 +13,7 @@ def analyze_code(source):
                 "args": len(node.args.args),
                 "async": isinstance(node, ast.AsyncFunctionDef)
             })
+    return {
+        "lines": len(source.splitlines()),
+        "functions": functions,
+    }
