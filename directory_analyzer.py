@@ -10,3 +10,4 @@ def analyze_extensions(files: list[Path]) -> Counter:
 
 
 def largest_files(files: list[Path], limit: int = 5) -> list[tuple[int, Path]]:
+    return heapq.nlargest(limit, ((f.stat().st_size, f) for f in files))
