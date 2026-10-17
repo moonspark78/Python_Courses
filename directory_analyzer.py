@@ -23,3 +23,5 @@ def generate_report(directory: str) -> dict:
     
 if __name__ == "__main__":
     report = generate_report("./")
+    print(f"Fichiers analysés : {report['total_files']}")
+    print(f"Extensions : {report['extensions'].most_common()}")
