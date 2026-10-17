@@ -20,3 +20,5 @@ def generate_report(directory: str) -> dict:
         "largest_files": largest_files(files),
         "total_size_mb": round(sum(f.stat().st_size for f in files) / 1_048_576, 2),        
     }
+    
+if __name__ == "__main__":
