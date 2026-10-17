@@ -25,3 +25,4 @@ code = """
 def calculate(values):
     return sum(x * 2 for x in values if x > 0)
 """
+print(analyze_code(code))
