@@ -25,3 +25,4 @@ if __name__ == "__main__":
     report = generate_report("./")
     print(f"Fichiers analysés : {report['total_files']}")
     print(f"Extensions : {report['extensions'].most_common()}")
+    print(f"Taille totale : {report['total_size_mb']} Mo")
