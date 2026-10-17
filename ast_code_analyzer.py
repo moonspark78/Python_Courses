@@ -20,3 +20,8 @@ def analyze_code(source):
         + stats["While"] + stats["Try"],
         "node_types": stats.most_common(5)
     }
+    
+code = """
+def calculate(values):
+    return sum(x * 2 for x in values if x > 0)
+"""
