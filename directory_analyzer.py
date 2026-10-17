@@ -22,3 +22,4 @@ def generate_report(directory: str) -> dict:
     }
     
 if __name__ == "__main__":
+    report = generate_report("./")
