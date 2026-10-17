@@ -27,3 +27,4 @@ if __name__ == "__main__":
     print(f"Extensions : {report['extensions'].most_common()}")
     print(f"Taille totale : {report['total_size_mb']} Mo")
     for size, path in report["largest_files"]:
+        print(f"{path}: {size:,} octets")
