@@ -7,3 +7,9 @@ def analyze_code(source):
     functions = []
     for node in ast.walk(tree):
         stats[type(node).__name__] += 1
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            functions.append({
+                "name": node.name,
+                "args": len(node.args.args),
+                "async": isinstance(node, ast.AsyncFunctionDef)
+            })
