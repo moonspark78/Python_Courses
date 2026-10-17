@@ -16,4 +16,6 @@ def analyze_code(source):
     return {
         "lines": len(source.splitlines()),
         "functions": functions,
+        "complexity": stats["If"] + stats["For"]
+        + stats["While"] + stats["Try"],
     }
