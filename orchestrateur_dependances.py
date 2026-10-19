@@ -9,3 +9,6 @@ def planifier(taches):
         raise ValueError(f"Cycle détecté : {erreur.args[1]}") from erreur
     niveaux = {}
     for tache in ordre:
+        niveaux[tache] = 1 + max(
+            (niveaux[p] for p in dependances[tache]), default=-1)
+    groupes = defaultdict(list)
