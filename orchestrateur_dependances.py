@@ -14,3 +14,4 @@ def planifier(taches):
     groupes = defaultdict(list)
     for tache, niveau in niveaux.items():
         groupes[niveau].append(tache)
+    return ordre, dict(sorted(groupes.items()))
