@@ -7,3 +7,5 @@ def planifier(taches):
         ordre = tuple(TopologicalSorter(dependances).static_order())
     except CycleError as erreur:
         raise ValueError(f"Cycle détecté : {erreur.args[1]}") from erreur
+    niveaux = {}
+    for tache in ordre:
