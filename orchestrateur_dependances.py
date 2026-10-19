@@ -23,3 +23,5 @@ if __name__ == "__main__":
         "integration": ["api", "interface"],
         "tests": ["integration"], "deploiement": ["tests"],
     }
+    
+    ordre, etapes = planifier(projet)
