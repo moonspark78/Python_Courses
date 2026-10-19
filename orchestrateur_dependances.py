@@ -19,4 +19,7 @@ def planifier(taches):
 if __name__ == "__main__":
     projet = {
         "maquette": [], "base_de_donnees": [],
+        "api": ["base_de_donnees"], "interface": ["maquette"],
+        "integration": ["api", "interface"],
+        "tests": ["integration"], "deploiement": ["tests"],
     }
