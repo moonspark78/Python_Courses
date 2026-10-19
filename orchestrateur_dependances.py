@@ -13,3 +13,4 @@ def planifier(taches):
             (niveaux[p] for p in dependances[tache]), default=-1)
     groupes = defaultdict(list)
     for tache, niveau in niveaux.items():
+        groupes[niveau].append(tache)
