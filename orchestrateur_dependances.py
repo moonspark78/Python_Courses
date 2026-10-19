@@ -15,3 +15,8 @@ def planifier(taches):
     for tache, niveau in niveaux.items():
         groupes[niveau].append(tache)
     return ordre, dict(sorted(groupes.items()))
+
+if __name__ == "__main__":
+    projet = {
+        "maquette": [], "base_de_donnees": [],
+    }
