@@ -26,3 +26,4 @@ if __name__ == "__main__":
     
     ordre, etapes = planifier(projet)
     print("Ordre :", " -> ".join(ordre))
+    for niveau, taches in etapes.items():
