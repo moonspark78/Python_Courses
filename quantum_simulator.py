@@ -18,3 +18,5 @@ def evolve(state, steps):
 
 def analyze(state):
     entropy = -sum(p * cmath.log(p + 1e-12).real
+                   for p in [abs(x) ** 2 for x in state])
+    return entropy, max(abs(x) ** 2 for x in state)
