@@ -14,3 +14,7 @@ def evolve(state, steps):
         norm = sum(abs(x) ** 2 for x in state) ** 0.5
         state = [x / norm for x in state]
     return state
+
+
+def analyze(state):
+    entropy = -sum(p * cmath.log(p + 1e-12).real
