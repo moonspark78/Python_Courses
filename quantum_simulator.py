@@ -12,3 +12,5 @@ def evolve(state, steps):
         state = [x * phase for x in state]
         state = [x + complex(0, 0.01 * random.random()) for x in state]
         norm = sum(abs(x) ** 2 for x in state) ** 0.5
+        state = [x / norm for x in state]
+    return state
