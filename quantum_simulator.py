@@ -23,3 +23,5 @@ def analyze(state):
 
 if __name__ == "__main__":
     s = quantum_state(8)
+    result = evolve(s, 100)
+    entropy, peak = analyze(result)
