@@ -27,3 +27,4 @@ if __name__ == "__main__":
     entropy, peak = analyze(result)
     print("État final :", result)
     print("Entropie :", round(entropy, 4))
+    print("Probabilité maximale :", round(peak, 4))
