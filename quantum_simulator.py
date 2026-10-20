@@ -25,3 +25,5 @@ if __name__ == "__main__":
     s = quantum_state(8)
     result = evolve(s, 100)
     entropy, peak = analyze(result)
+    print("État final :", result)
+    print("Entropie :", round(entropy, 4))
