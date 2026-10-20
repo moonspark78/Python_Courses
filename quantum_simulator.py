@@ -8,3 +8,5 @@ def quantum_state(n):
 
 def evolve(state, steps):
     for _ in range(steps):
+        phase = cmath.exp(1j * random.uniform(-3.14, 3.14))
+        state = [x * phase for x in state]
