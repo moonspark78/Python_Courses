@@ -14,6 +14,6 @@ class CyberVault:
         
     def verify(self, password):
         candidate = hashlib.pbkdf2_hmac(
-    
+            "sha256", password.encode(), self.salt, 200_000
     )
         
