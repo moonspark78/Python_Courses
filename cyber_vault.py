@@ -22,7 +22,7 @@ def generate_password(length=24):
     alphabet = string.ascii_letters + string.digits + "!@#$%^&*"
     while True:
         password = "".join(secrets.choice(alphabet) for _ in range(length))
-        if (any(c.islower() for c in password))
+        if (any(c.islower() for c in password)
             and any(c.isupper() for c in password)
             and any(c.isdigit() for c in password)
             and any(c in "!@#$%^&*" for c in password)):
@@ -30,3 +30,5 @@ def generate_password(length=24):
 
 vault = CyberVault("MotDePasse_Secret42!")
 vault2 = CyberVault("AutreMotDePasse99!")
+print(vault.verify("FauxMotDePasse"))
+print("Accès autorisé" if vault.verify("MotDePasse_Secret42!") else "Accès refusé")
