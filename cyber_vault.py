@@ -18,3 +18,6 @@ class CyberVault:
         )
         return secrets.compare_digest(self.key, candidate)
         
+def generate_password(length=24):
+    alphabet = string.ascii_letters + string.digits + "!@#$%^&*"
+    while True:
