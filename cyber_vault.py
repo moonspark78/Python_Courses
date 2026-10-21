@@ -27,3 +27,6 @@ def generate_password(length=24):
             and any(c.isdigit() for c in password)
             and any(c in "!@#$%^&*" for c in password)):
             return password
+
+vault = CyberVault("MotDePasse_Secret42!")
+vault2 = CyberVault("AutreMotDePasse99!")
