@@ -21,3 +21,5 @@ class CyberVault:
 def generate_password(length=24):
     alphabet = string.ascii_letters + string.digits + "!@#$%^&*"
     while True:
+        password = "".join(secrets.choice(alphabet) for _ in range(length))
+        if (any(c.islower() for c in password))
