@@ -24,3 +24,6 @@ def chemin(grille, depart, arrivee):
             if 0<=nx<n and 0<=ny<n and grille[nx][ny]==0 and v not in visites:
                 visites.add(v); file.append((v, route+[v]))
     return None
+
+if __name__ == '__main__':
+    g = generer_grille(8, 10); debut, fin = (0,0), (7,7)
