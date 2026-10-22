@@ -6,3 +6,6 @@ def generer_grille(n, obstacles):
         x, y = random.randrange(n), random.randrange(n)
         grille[x][y] = 1
     return grille
+
+def afficher(grille):
+    for ligne in grille:
