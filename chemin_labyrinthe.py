@@ -5,3 +5,4 @@ def generer_grille(n, obstacles):
     for _ in range(obstacles):
         x, y = random.randrange(n), random.randrange(n)
         grille[x][y] = 1
+    return grille
