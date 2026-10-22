@@ -9,3 +9,4 @@ def generer_grille(n, obstacles):
 
 def afficher(grille):
     for ligne in grille:
+        print(' '.join('██' if c else '··' for c in ligne))
