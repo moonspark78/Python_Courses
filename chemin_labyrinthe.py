@@ -29,3 +29,4 @@ if __name__ == '__main__':
     g = generer_grille(8, 10); debut, fin = (0,0), (7,7)
     g[0][0] = g[7][7] = 0; afficher(g)
     resultat = chemin(g, debut, fin)
+    print('Chemin trouvé :', resultat or 'aucun')
