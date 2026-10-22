@@ -15,3 +15,6 @@ def afficher(grille):
 def chemin(grille, depart, arrivee):
     n = len(grille)
     file, visites = [(depart, [depart])], {depart}
+    directions = [(1,0), (-1,0), (0,1), (0,-1)]
+    while file:
+        (x,y), route = file.pop(0)
