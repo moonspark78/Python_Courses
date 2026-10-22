@@ -18,3 +18,9 @@ def chemin(grille, depart, arrivee):
     directions = [(1,0), (-1,0), (0,1), (0,-1)]
     while file:
         (x,y), route = file.pop(0)
+        if (x,y) == arrivee: return route
+        for dx,dy in directions:
+            nx,ny = x+dx, y+dy; v = (nx,ny)
+            if 0<=nx<n and 0<=ny<n and grille[nx][ny]==0 and v not in visites:
+                visites.add(v); file.append((v, route+[v]))
+    return None
