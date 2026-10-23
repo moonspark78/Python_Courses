@@ -8,3 +8,6 @@ def generer(longueur, symboles=True):
         groupes.append("!@#$%&*+-_=?")
     if longueur < len(groupes):
         raise ValueError("Longueur trop courte.")
+    alphabet = "".join(groupes)
+    resultat = [secrets.choice(g) for g in groupes]
+    resultat += [secrets.choice(alphabet) for _ in range(longueur - len(resultat))]
