@@ -28,3 +28,6 @@ def main():
             print(f"{i + 1}: {generer(args.longueur, not args.sans_symboles)}")
     except ValueError as erreur:
         parser.error(str(erreur))
+        
+        
+if __name__ == "__main__":
