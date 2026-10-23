@@ -18,3 +18,5 @@ def generer(longueur, symboles=True):
 def main():
     parser = argparse.ArgumentParser(description="Generateur securise")
     parser.add_argument("-l", "--longueur", type=int, default=20)
+    parser.add_argument("-n", "--nombre", type=int, default=1)
+    parser.add_argument("--sans-symboles", action="store_true")
