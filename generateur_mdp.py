@@ -23,3 +23,6 @@ def main():
     args = parser.parse_args()
     if args.nombre < 1:
         parser.error("Le nombre doit etre positif.")
+    try:
+        for i in range(args.nombre):
+            print(f"{i + 1}: {generer(args.longueur, not args.sans_symboles)}")
