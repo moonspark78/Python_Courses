@@ -13,3 +13,8 @@ def generer(longueur, symboles=True):
     resultat += [secrets.choice(alphabet) for _ in range(longueur - len(resultat))]
     secrets.SystemRandom().shuffle(resultat)
     return "".join(resultat)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Generateur securise")
+    parser.add_argument("-l", "--longueur", type=int, default=20)
