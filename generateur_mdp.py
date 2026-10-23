@@ -20,3 +20,6 @@ def main():
     parser.add_argument("-l", "--longueur", type=int, default=20)
     parser.add_argument("-n", "--nombre", type=int, default=1)
     parser.add_argument("--sans-symboles", action="store_true")
+    args = parser.parse_args()
+    if args.nombre < 1:
+        parser.error("Le nombre doit etre positif.")
