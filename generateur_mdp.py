@@ -26,3 +26,5 @@ def main():
     try:
         for i in range(args.nombre):
             print(f"{i + 1}: {generer(args.longueur, not args.sans_symboles)}")
+    except ValueError as erreur:
+        parser.error(str(erreur))
