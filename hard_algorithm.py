@@ -11,3 +11,8 @@ def shortest_paths(graph, start):
     
     while queue:
         distance, node = heapq.heappop(queue)
+        if distance > distances[node]:
+            continue
+
+        for neighbor, weight in graph[node]:
+            new_distance = distance + weight
