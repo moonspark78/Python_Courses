@@ -16,3 +16,6 @@ def shortest_paths(graph, start):
 
         for neighbor, weight in graph[node]:
             new_distance = distance + weight
+            if new_distance < distances[neighbor]:
+                distances[neighbor] = new_distance
+                previous[neighbor] = node
