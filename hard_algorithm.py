@@ -40,3 +40,5 @@ if __name__ == "__main__":
         "E": [("F", 3)],
         "F": []
     }
+    
+    distances, previous = shortest_paths(graph, "A")
