@@ -8,3 +8,6 @@ def shortest_paths(graph, start):
     previous = {}
     distances[start] = 0
     queue = [(0, start)]
+    
+    while queue:
+        distance, node = heapq.heappop(queue)
