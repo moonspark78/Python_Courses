@@ -22,3 +22,9 @@ def shortest_paths(graph, start):
                 heapq.heappush(queue, (new_distance, neighbor))
 
     return dict(distances), previous
+
+def reconstruct_path(previous, target):
+    path = []
+    while target in previous:
+        path.append(target)
+        target = previous[target]
