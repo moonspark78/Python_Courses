@@ -43,3 +43,4 @@ if __name__ == "__main__":
     
     distances, previous = shortest_paths(graph, "A")
     print("Shortest distances:", distances)
+    print("Path to F:", reconstruct_path(previous, "F"))
