@@ -30,3 +30,9 @@ def reconstruct_path(previous, target):
         target = previous[target]
     path.append(target)
     return path[::-1]
+
+if __name__ == "__main__":
+    graph = {
+        "A": [("B", 4), ("C", 2)],
+        "B": [("C", 1), ("D", 5)],
+    }
