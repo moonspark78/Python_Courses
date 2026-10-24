@@ -19,3 +19,6 @@ def shortest_paths(graph, start):
             if new_distance < distances[neighbor]:
                 distances[neighbor] = new_distance
                 previous[neighbor] = node
+                heapq.heappush(queue, (new_distance, neighbor))
+
+    return dict(distances), previous
