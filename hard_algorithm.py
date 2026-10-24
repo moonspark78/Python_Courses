@@ -28,3 +28,5 @@ def reconstruct_path(previous, target):
     while target in previous:
         path.append(target)
         target = previous[target]
+    path.append(target)
+    return path[::-1]
