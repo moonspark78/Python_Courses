@@ -20,3 +20,7 @@ def rechercher_mot(frequences, mot):
     mot = mot.lower()
     nombre = frequences.get(mot, 0)
     print(f"Le mot '{mot}' apparaît {nombre} fois.")
+    
+def main():
+    texte = input("Entrez un texte : ")
+    frequences = analyser_texte(texte)
