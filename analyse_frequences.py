@@ -5,3 +5,6 @@ def analyser_texte(texte):
     mots = re.findall(r"\b[a-zA-ZÀ-ÿ]+\b", texte.lower())
     frequences = Counter(mots)
     return frequences
+
+def afficher_resultats(frequences):
+    if not frequences:
