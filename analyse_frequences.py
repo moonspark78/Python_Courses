@@ -12,3 +12,6 @@ def afficher_resultats(frequences):
         return
     print("Nombre total de mots :", sum(frequences.values()))
     print("Nombre de mots uniques :", len(frequences))
+    print("\nLes 5 mots les plus fréquents :")
+    for mot, nombre in frequences.most_common(5):
+        print(f"{mot} : {nombre} fois")
