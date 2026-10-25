@@ -10,3 +10,5 @@ def afficher_resultats(frequences):
     if not frequences:
         print("Aucun mot trouvé.")
         return
+    print("Nombre total de mots :", sum(frequences.values()))
+    print("Nombre de mots uniques :", len(frequences))
