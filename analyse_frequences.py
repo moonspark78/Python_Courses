@@ -8,3 +8,5 @@ def analyser_texte(texte):
 
 def afficher_resultats(frequences):
     if not frequences:
+        print("Aucun mot trouvé.")
+        return
