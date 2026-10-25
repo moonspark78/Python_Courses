@@ -26,3 +26,4 @@ def main():
     frequences = analyser_texte(texte)
     afficher_resultats(frequences)
     mot = input("\nQuel mot rechercher ? ")
+    rechercher_mot(frequences, mot)
