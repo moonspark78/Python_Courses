@@ -15,3 +15,7 @@ def afficher_resultats(frequences):
     print("\nLes 5 mots les plus fréquents :")
     for mot, nombre in frequences.most_common(5):
         print(f"{mot} : {nombre} fois")
+        
+def rechercher_mot(frequences, mot):
+    mot = mot.lower()
+    nombre = frequences.get(mot, 0)
