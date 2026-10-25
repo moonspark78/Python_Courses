@@ -27,3 +27,6 @@ def main():
     afficher_resultats(frequences)
     mot = input("\nQuel mot rechercher ? ")
     rechercher_mot(frequences, mot)
+    
+if __name__ == "__main__":
+    main()
