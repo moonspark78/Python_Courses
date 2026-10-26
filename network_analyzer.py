@@ -34,3 +34,5 @@ def main():
     print(analyze_sizes(files))
     print(get_file_info("report.pdf"))
     print("Port 443 accessible:", check_port("example.com", 443))
+    
+if __name__ == "__main__":
