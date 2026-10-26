@@ -24,3 +24,6 @@ def analyze_sizes(file_paths):
              if get_file_info(p) is not None]
     if not sizes:
         return {"count": 0, "average": 0, "median": 0}
+    return {"count": len(sizes),
+            "average": round(statistics.mean(sizes), 2),
+            "median": statistics.median(sizes)}
