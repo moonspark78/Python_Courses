@@ -36,3 +36,4 @@ def main():
     print("Port 443 accessible:", check_port("example.com", 443))
     
 if __name__ == "__main__":
+    main()
