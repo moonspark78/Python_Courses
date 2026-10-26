@@ -33,3 +33,4 @@ def main():
     files = ["report.pdf", "image.png", "notes.txt"]
     print(analyze_sizes(files))
     print(get_file_info("report.pdf"))
+    print("Port 443 accessible:", check_port("example.com", 443))
