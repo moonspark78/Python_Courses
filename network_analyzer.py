@@ -10,3 +10,7 @@ def get_file_info(file_path):
     mime_type, encoding = mimetypes.guess_type(path.name)
     return {"name": path.name, "size": path.stat().st_size,
             "type": mime_type or "unknown"}
+    
+def check_port(host, port, timeout=2):
+    try:
+        with socket.create_connection((host, port), timeout):
