@@ -31,3 +31,4 @@ def analyze_sizes(file_paths):
 
 def main():
     files = ["report.pdf", "image.png", "notes.txt"]
+    print(analyze_sizes(files))
