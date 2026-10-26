@@ -27,3 +27,7 @@ def analyze_sizes(file_paths):
     return {"count": len(sizes),
             "average": round(statistics.mean(sizes), 2),
             "median": statistics.median(sizes)}
+
+
+def main():
+    files = ["report.pdf", "image.png", "notes.txt"]
