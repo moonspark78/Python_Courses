@@ -14,3 +14,6 @@ def get_file_info(file_path):
 def check_port(host, port, timeout=2):
     try:
         with socket.create_connection((host, port), timeout):
+            return True
+    except (OSError, TimeoutError):
+        return False
