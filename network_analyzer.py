@@ -17,3 +17,8 @@ def check_port(host, port, timeout=2):
             return True
     except (OSError, TimeoutError):
         return False
+    
+    
+def analyze_sizes(file_paths):
+    sizes = [get_file_info(p)["size"] for p in file_paths
+             if get_file_info(p) is not None]
