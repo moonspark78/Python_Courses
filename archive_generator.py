@@ -19,3 +19,4 @@ def display_archive(archive):
     print(f"Statut : {archive['status']}")
     print("-" * 30)
     print(archive["content"])
+    print("=" * 30)
