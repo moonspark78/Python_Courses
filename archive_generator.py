@@ -26,3 +26,6 @@ def save_archive(archive):
     filename = f"{archive['id']}.txt"
     with open(filename, "w", encoding="utf-8") as file:
         file.write(archive["title"] + "\n")
+        file.write(archive["content"] + "\n")
+        file.write(archive["status"])
+    print(f"Archive sauvegardee : {filename}")
