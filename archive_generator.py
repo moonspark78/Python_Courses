@@ -7,4 +7,6 @@ def generate_archive(title, content):
     archive = {
         "id": archive_id,
         "title": title,
+        "content": formatted_content,
+        "status": "created"
     }
