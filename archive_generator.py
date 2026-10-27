@@ -17,3 +17,5 @@ def display_archive(archive):
     print(f"Archive : {archive['title']}")
     print(f"Identifiant : {archive['id']}")
     print(f"Statut : {archive['status']}")
+    print("-" * 30)
+    print(archive["content"])
