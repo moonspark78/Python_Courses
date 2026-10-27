@@ -35,3 +35,4 @@ def main():
     content = "Python permet d'automatiser des taches."
     archive = generate_archive(title, content)
     display_archive(archive)
+    save_archive(archive)
