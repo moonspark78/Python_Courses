@@ -20,3 +20,9 @@ def display_archive(archive):
     print("-" * 30)
     print(archive["content"])
     print("=" * 30)
+    
+    
+def save_archive(archive):
+    filename = f"{archive['id']}.txt"
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write(archive["title"] + "\n")
