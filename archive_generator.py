@@ -11,3 +11,7 @@ def generate_archive(title, content):
         "status": "created"
     }
     return archive
+
+def display_archive(archive):
+    print("=" * 30)
+    print(f"Archive : {archive['title']}")
