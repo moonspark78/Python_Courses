@@ -15,3 +15,5 @@ def generate_archive(title, content):
 def display_archive(archive):
     print("=" * 30)
     print(f"Archive : {archive['title']}")
+    print(f"Identifiant : {archive['id']}")
+    print(f"Statut : {archive['status']}")
