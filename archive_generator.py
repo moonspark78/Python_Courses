@@ -10,3 +10,4 @@ def generate_archive(title, content):
         "content": formatted_content,
         "status": "created"
     }
+    return archive
