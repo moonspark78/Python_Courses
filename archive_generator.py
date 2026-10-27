@@ -36,3 +36,6 @@ def main():
     archive = generate_archive(title, content)
     display_archive(archive)
     save_archive(archive)
+    
+if __name__ == "__main__":
+    main()
