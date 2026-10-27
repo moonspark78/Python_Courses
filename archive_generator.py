@@ -29,3 +29,7 @@ def save_archive(archive):
         file.write(archive["content"] + "\n")
         file.write(archive["status"])
     print(f"Archive sauvegardee : {filename}")
+    
+def main():
+    title = "Python et automatisation"
+    content = "Python permet d'automatiser des taches."
