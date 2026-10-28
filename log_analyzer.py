@@ -24,3 +24,9 @@ def analyze_logs(file_path):
             match = PATTERN.search(line)
             if not match:
                 continue
+            data = match.groupdict()
+            status = int(data["status"])
+            total += 1
+            stats[f"HTTP_{status}"] += 1
+            ips[data["ip"]][status] += 1
+            if status >= 400:
