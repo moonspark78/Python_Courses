@@ -42,3 +42,15 @@ def analyze_logs(file_path):
         for ip, counts in ips.items()
         if sum(n for code, n in counts.items() if code >= 400) >= 5
     }
+    
+    return {"total": total, "stats": dict(stats),
+            "errors": errors, "suspicious_ips": suspicious}
+
+def main():
+    if not LOG_FILE.exists():
+        print(f"Fichier introuvable : {LOG_FILE}")
+        return
+    report = analyze_logs(LOG_FILE)
+    report["generated_at"] = datetime.now().isoformat()
+    REPORT_FILE.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(json.dumps(report, indent=2))
