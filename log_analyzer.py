@@ -54,3 +54,7 @@ def main():
     report["generated_at"] = datetime.now().isoformat()
     REPORT_FILE.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(report, indent=2))
+    print(f"\nRapport sauvegardé : {REPORT_FILE}")
+
+if __name__ == "__main__":
+    main()
