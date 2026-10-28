@@ -17,3 +17,5 @@ PATTERN = re.compile(
 def analyze_logs(file_path):
     stats = Counter()
     ips = defaultdict(Counter)
+    errors = []
+    total = 0
