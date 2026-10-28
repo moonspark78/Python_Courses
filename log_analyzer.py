@@ -30,3 +30,9 @@ def analyze_logs(file_path):
             stats[f"HTTP_{status}"] += 1
             ips[data["ip"]][status] += 1
             if status >= 400:
+                errors.append({
+                    "line": line_number,
+                    "ip": data["ip"],
+                    "path": data["path"],
+                    "status": status,
+                })
