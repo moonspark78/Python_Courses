@@ -13,3 +13,7 @@ PATTERN = re.compile(
     r'"(?P<method>\w+) (?P<path>[^ ]+).*?" '
     r"(?P<status>\d{3})"
 )
+
+def analyze_logs(file_path):
+    stats = Counter()
+    ips = defaultdict(Counter)
