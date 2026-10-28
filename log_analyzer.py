@@ -36,3 +36,9 @@ def analyze_logs(file_path):
                     "path": data["path"],
                     "status": status,
                 })
+                
+    suspicious = {
+        ip: dict(counts)
+        for ip, counts in ips.items()
+        if sum(n for code, n in counts.items() if code >= 400) >= 5
+    }
