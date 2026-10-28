@@ -19,3 +19,8 @@ def analyze_logs(file_path):
     ips = defaultdict(Counter)
     errors = []
     total = 0
+    with file_path.open("r", encoding="utf-8") as file:
+        for line_number, line in enumerate(file, 1):
+            match = PATTERN.search(line)
+            if not match:
+                continue
