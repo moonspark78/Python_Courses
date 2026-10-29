@@ -48,3 +48,5 @@ class TF1Analyzer:
 
 if __name__ == "__main__":
     analyzer = TF1Analyzer("programs.json")
+    print("Programmes chargés :", analyzer.load_data())
+    print("Résultats :", analyzer.search("journal"))
