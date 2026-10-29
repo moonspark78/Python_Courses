@@ -51,3 +51,4 @@ if __name__ == "__main__":
     print("Programmes chargés :", analyzer.load_data())
     print("Résultats :", analyzer.search("journal"))
     print("Catégories :", analyzer.categories())
+    analyzer.export()
