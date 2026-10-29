@@ -25,3 +25,7 @@ class TF1Analyzer:
         self.programs = []
     @measure_time
     def load_data(self):
+        try:
+            data = json.loads(self.filename.read_text(encoding="utf-8"))
+            self.programs = data.get("programs", [])
+            return len(self.programs)
