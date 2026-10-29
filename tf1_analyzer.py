@@ -23,3 +23,5 @@ class TF1Analyzer:
     def __init__(self, filename):
         self.filename = Path(filename)
         self.programs = []
+    @measure_time
+    def load_data(self):
