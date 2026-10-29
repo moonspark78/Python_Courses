@@ -17,3 +17,9 @@ def measure_time(func):
         logger.info("%s exécutée en %s", func.__name__, datetime.now() - start)
         return result
     return wrapper
+
+
+class TF1Analyzer:
+    def __init__(self, filename):
+        self.filename = Path(filename)
+        self.programs = []
