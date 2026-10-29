@@ -36,3 +36,7 @@ class TF1Analyzer:
     def search(self, keyword):
         pattern = re.compile(re.escape(keyword), re.IGNORECASE)
         return [p for p in self.programs if pattern.search(p.get("title", ""))]
+    
+    
+    def categories(self):
+        return Counter(p.get("category", "Inconnu") for p in self.programs)
