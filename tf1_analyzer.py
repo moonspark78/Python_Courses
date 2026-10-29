@@ -32,3 +32,7 @@ class TF1Analyzer:
         except (OSError, json.JSONDecodeError) as error:
             logger.error("Erreur de lecture : %s", error)
             return 0
+        
+    def search(self, keyword):
+        pattern = re.compile(re.escape(keyword), re.IGNORECASE)
+        return [p for p in self.programs if pattern.search(p.get("title", ""))]
