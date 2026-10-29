@@ -16,3 +16,4 @@ def measure_time(func):
         result = func(*args, **kwargs)
         logger.info("%s exécutée en %s", func.__name__, datetime.now() - start)
         return result
+    return wrapper
