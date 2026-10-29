@@ -1,0 +1,7 @@
+{
+  "programs": [
+    {"title": "Journal de 20 heures", "category": "Information"},
+    {"title": "The Voice", "category": "Divertissement"},
+    {"title": "Journal de 13 heures", "category": "Information"}
+  ]
+}
