@@ -29,3 +29,6 @@ class TF1Analyzer:
             data = json.loads(self.filename.read_text(encoding="utf-8"))
             self.programs = data.get("programs", [])
             return len(self.programs)
+        except (OSError, json.JSONDecodeError) as error:
+            logger.error("Erreur de lecture : %s", error)
+            return 0
