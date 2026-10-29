@@ -45,3 +45,6 @@ class TF1Analyzer:
         report = {"total": len(self.programs), "categories": dict(self.categories())}
         Path(output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         return report
+
+if __name__ == "__main__":
+    analyzer = TF1Analyzer("programs.json")
