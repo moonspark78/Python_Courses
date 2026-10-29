@@ -40,3 +40,8 @@ class TF1Analyzer:
     
     def categories(self):
         return Counter(p.get("category", "Inconnu") for p in self.programs)
+    
+    def export(self, output="report.json"):
+        report = {"total": len(self.programs), "categories": dict(self.categories())}
+        Path(output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        return report
