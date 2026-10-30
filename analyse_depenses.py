@@ -20,3 +20,10 @@ def calculer_total(data):
 
 def calculer_moyenne(data):
     return mean(item["montant"] for item in data)
+
+def regrouper_categories(data):
+    resultats = {}
+    for item in data:
+        categorie = item["categorie"]
+        resultats[categorie] = resultats.get(categorie, 0) + item["montant"]
+    return resultats
