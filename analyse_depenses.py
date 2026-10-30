@@ -32,3 +32,7 @@ def afficher_resultats(data):
     print("=== ANALYSE DES DEPENSES ===")
     print(f"Nombre de dépenses : {len(data)}")
     print(f"Total : {calculer_total(data):.2f} €")
+    print(f"Moyenne : {calculer_moyenne(data):.2f} €")
+    print("\nDépenses par catégorie :")
+    for categorie, montant in regrouper_categories(data).items():
+        print(f"{categorie} : {montant:.2f} €")
