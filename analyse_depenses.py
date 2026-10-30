@@ -9,4 +9,6 @@ depenses = [
     {"categorie": "Logement", "montant": 650.00},
     {"categorie": "Alimentation", "montant": 32.90},
     {"categorie": "Loisirs", "montant": 60.00},
+    {"categorie": "Transport", "montant": 18.50},
+    {"categorie": "Restaurants", "montant": 35.00},
     ]
