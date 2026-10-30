@@ -36,3 +36,7 @@ def afficher_resultats(data):
     print("\nDépenses par catégorie :")
     for categorie, montant in regrouper_categories(data).items():
         print(f"{categorie} : {montant:.2f} €")
+        
+        
+if __name__ == "__main__":
+    afficher_resultats(depenses)
