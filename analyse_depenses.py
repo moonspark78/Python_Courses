@@ -17,3 +17,6 @@ depenses = [
 
 def calculer_total(data):
     return sum(item["montant"] for item in data)
+
+def calculer_moyenne(data):
+    return mean(item["montant"] for item in data)
