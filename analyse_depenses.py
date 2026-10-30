@@ -13,4 +13,7 @@ depenses = [
     {"categorie": "Restaurants", "montant": 35.00},
     {"categorie": "Alimentation", "montant": 72.00},
     {"categorie": "Loisirs", "montant": 25.00},
-    ]
+]
+
+def calculer_total(data):
+    return sum(item["montant"] for item in data)
