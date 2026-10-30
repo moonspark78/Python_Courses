@@ -27,3 +27,8 @@ def regrouper_categories(data):
         categorie = item["categorie"]
         resultats[categorie] = resultats.get(categorie, 0) + item["montant"]
     return resultats
+
+def afficher_resultats(data):
+    print("=== ANALYSE DES DEPENSES ===")
+    print(f"Nombre de dépenses : {len(data)}")
+    print(f"Total : {calculer_total(data):.2f} €")
