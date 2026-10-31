@@ -28,3 +28,7 @@ class NeuralNetwork:
             self.weights[i] -= self.lr * dw
             self.biases[i] -= self.lr * db
         return np.mean(error ** 2)
+    
+nn = NeuralNetwork([2, 8, 4, 1])
+for epoch in range(1000):
+    x = np.random.rand(2, 1)
