@@ -22,3 +22,9 @@ class NeuralNetwork:
         delta = error * activations[-1] * (1 - activations[-1])
         for i in reversed(range(len(self.weights))):
             dw = delta @ activations[i].T
+            db = delta
+            if i > 0:
+                delta = (self.weights[i].T @ delta) * activations[i] * (1 - activations[i])
+            self.weights[i] -= self.lr * dw
+            self.biases[i] -= self.lr * db
+        return np.mean(error ** 2)
