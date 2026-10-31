@@ -32,3 +32,7 @@ class NeuralNetwork:
 nn = NeuralNetwork([2, 8, 4, 1])
 for epoch in range(1000):
     x = np.random.rand(2, 1)
+    y = np.array([[float(x.sum() > 1)]])
+    loss = nn.train(x, y)
+    if epoch % 100 == 0:
+        print(f"Epoch {epoch} | Loss: {loss:.6f}")
