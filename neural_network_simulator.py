@@ -8,3 +8,8 @@ class NeuralNetwork:
         
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-np.clip(x, -500, 500)))
+    
+    def forward(self, x):
+        activations = [x]
+        for w, b in zip(self.weights, self.biases):
+            x = self.sigmoid(w @ x + b)
