@@ -13,3 +13,5 @@ class NeuralNetwork:
         activations = [x]
         for w, b in zip(self.weights, self.biases):
             x = self.sigmoid(w @ x + b)
+            activations.append(x)
+        return activations
