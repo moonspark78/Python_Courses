@@ -15,3 +15,10 @@ class NeuralNetwork:
             x = self.sigmoid(w @ x + b)
             activations.append(x)
         return activations
+    
+    def train(self, x, y):
+        activations = self.forward(x)
+        error = activations[-1] - y
+        delta = error * activations[-1] * (1 - activations[-1])
+        for i in reversed(range(len(self.weights))):
+            dw = delta @ activations[i].T
