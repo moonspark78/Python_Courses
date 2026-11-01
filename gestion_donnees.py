@@ -36,3 +36,6 @@ ajouter_utilisateur("Lucas", 29, "Lyon")
 modifier_age(1, 27)
 
 print("Recherche :", rechercher_utilisateur("Alice"))
+
+afficher_donnees()
+sauvegarder_donnees()
