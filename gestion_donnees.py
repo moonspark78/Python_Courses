@@ -17,3 +17,6 @@ def ajouter_utilisateur(nom, age, ville):
 
 def rechercher_utilisateur(nom):
     return next((u for u in utilisateurs if u["nom"].lower() == nom.lower()), None)
+
+def modifier_age(user_id, nouvel_age):
+    for user in utilisateurs:
