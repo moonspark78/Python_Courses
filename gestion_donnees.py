@@ -34,3 +34,5 @@ def sauvegarder_donnees():
         
 ajouter_utilisateur("Lucas", 29, "Lyon")
 modifier_age(1, 27)
+
+print("Recherche :", rechercher_utilisateur("Alice"))
