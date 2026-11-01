@@ -27,3 +27,7 @@ def modifier_age(user_id, nouvel_age):
 
 def supprimer_utilisateur(user_id):
     utilisateurs[:] = [u for u in utilisateurs if u["id"] != user_id]
+    
+def sauvegarder_donnees():
+    with open("utilisateurs.json", "w", encoding="utf-8") as fichier:
+        json.dump(utilisateurs, fichier, indent=4, ensure_ascii=False)
