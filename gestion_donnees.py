@@ -13,3 +13,7 @@ def afficher_donnees():
 def ajouter_utilisateur(nom, age, ville):
     nouvel_id = max(u["id"] for u in utilisateurs) + 1
     utilisateurs.append({"id": nouvel_id, "nom": nom, "age": age, "ville": ville})
+
+
+def rechercher_utilisateur(nom):
+    return next((u for u in utilisateurs if u["nom"].lower() == nom.lower()), None)
