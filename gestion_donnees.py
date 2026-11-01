@@ -20,3 +20,5 @@ def rechercher_utilisateur(nom):
 
 def modifier_age(user_id, nouvel_age):
     for user in utilisateurs:
+        if user["id"] == user_id:
+            user["age"] = nouvel_age
