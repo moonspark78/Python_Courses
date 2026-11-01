@@ -31,3 +31,6 @@ def supprimer_utilisateur(user_id):
 def sauvegarder_donnees():
     with open("utilisateurs.json", "w", encoding="utf-8") as fichier:
         json.dump(utilisateurs, fichier, indent=4, ensure_ascii=False)
+        
+ajouter_utilisateur("Lucas", 29, "Lyon")
+modifier_age(1, 27)
