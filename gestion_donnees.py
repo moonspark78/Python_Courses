@@ -24,3 +24,6 @@ def modifier_age(user_id, nouvel_age):
             user["age"] = nouvel_age
             return True
     return False
+
+def supprimer_utilisateur(user_id):
+    utilisateurs[:] = [u for u in utilisateurs if u["id"] != user_id]
