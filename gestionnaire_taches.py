@@ -16,3 +16,7 @@ def sauvegarder_taches(taches):
 def afficher_taches(taches):
     for i, tache in enumerate(taches, 1):
         statut = "Terminée" if tache["terminee"] else "En cours"
+        print(f"{i}. {tache['nom']} - {statut}")
+
+def ajouter_tache(taches):
+    nom = input("Nom de la tâche : ")
