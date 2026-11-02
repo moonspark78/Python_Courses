@@ -11,3 +11,4 @@ def charger_taches():
 
 def sauvegarder_taches(taches):
     with open(FICHIER, "w", encoding="utf-8") as f:
+        json.dump(taches, f, indent=4, ensure_ascii=False)
