@@ -38,3 +38,6 @@ def main():
         elif choix == "3": terminer_tache(taches)
         elif choix == "4": sauvegarder_taches(taches); break
         sauvegarder_taches(taches)
+        
+if __name__ == "__main__":
+    main()
