@@ -8,3 +8,6 @@ def charger_taches():
         with open(FICHIER, "r", encoding="utf-8") as f:
             return json.load(f)
     return []
+
+def sauvegarder_taches(taches):
+    with open(FICHIER, "w", encoding="utf-8") as f:
