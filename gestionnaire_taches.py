@@ -15,3 +15,4 @@ def sauvegarder_taches(taches):
         
 def afficher_taches(taches):
     for i, tache in enumerate(taches, 1):
+        statut = "Terminée" if tache["terminee"] else "En cours"
