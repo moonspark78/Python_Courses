@@ -26,3 +26,11 @@ def terminer_tache(taches):
     afficher_taches(taches)
     numero = int(input("Numéro à terminer : "))
     if 1 <= numero <= len(taches):
+        taches[numero - 1]["terminee"] = True
+
+def main():
+    taches = charger_taches()
+    while True:
+        print("\n1. Ajouter  2. Afficher  3. Terminer  4. Quitter")
+        choix = input("Votre choix : ")
+        if choix == "1": ajouter_tache(taches)
