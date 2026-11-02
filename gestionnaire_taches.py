@@ -20,3 +20,4 @@ def afficher_taches(taches):
 
 def ajouter_tache(taches):
     nom = input("Nom de la tâche : ")
+    taches.append({"nom": nom, "terminee": False})
