@@ -34,3 +34,7 @@ def main():
         print("\n1. Ajouter  2. Afficher  3. Terminer  4. Quitter")
         choix = input("Votre choix : ")
         if choix == "1": ajouter_tache(taches)
+        elif choix == "2": afficher_taches(taches)
+        elif choix == "3": terminer_tache(taches)
+        elif choix == "4": sauvegarder_taches(taches); break
+        sauvegarder_taches(taches)
