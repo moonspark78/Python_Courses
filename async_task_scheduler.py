@@ -17,3 +17,6 @@ class TaskScheduler:
         self.queue = []
         self.results = {}
         self.running = False
+
+    def add_task(self, task: Task):
+        heapq.heappush(self.queue, task)
