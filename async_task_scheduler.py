@@ -20,3 +20,8 @@ class TaskScheduler:
 
     def add_task(self, task: Task):
         heapq.heappush(self.queue, task)
+        
+    async def execute(self, task: Task):
+        for attempt in range(task.retries):
+            try:
+                result = await task.callback()
