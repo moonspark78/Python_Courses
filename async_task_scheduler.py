@@ -25,3 +25,9 @@ class TaskScheduler:
         for attempt in range(task.retries):
             try:
                 result = await task.callback()
+                self.results[task.name] = result
+                return result
+            except Exception as error:
+                if attempt == task.retries - 1:
+                    self.results[task.name] = str(error)
+                await asyncio.sleep(2 ** attempt)
