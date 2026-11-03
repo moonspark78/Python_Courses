@@ -51,3 +51,7 @@ async def simulate_task():
 async def main():
     scheduler = TaskScheduler()
     for index in range(10):
+        scheduler.add_task(Task(index % 3, f"task_{index}", simulate_task))
+    await scheduler.run()
+    for name, result in scheduler.results.items():
+        print(f"{name}: {result}")
