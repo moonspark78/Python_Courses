@@ -55,3 +55,6 @@ async def main():
     await scheduler.run()
     for name, result in scheduler.results.items():
         print(f"{name}: {result}")
+        
+if __name__ == "__main__":
+    asyncio.run(main())
