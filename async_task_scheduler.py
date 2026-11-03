@@ -41,3 +41,8 @@ class TaskScheduler:
                 batch.append(heapq.heappop(self.queue))
             await asyncio.gather(*(self.execute(t) for t in batch))
         self.running = False
+        
+async def simulate_task():
+    await asyncio.sleep(random.uniform(0.5, 2))
+    if random.random() < 0.2:
+        raise RuntimeError("Temporary execution failure")
