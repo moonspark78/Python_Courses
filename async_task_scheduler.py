@@ -47,3 +47,7 @@ async def simulate_task():
     if random.random() < 0.2:
         raise RuntimeError("Temporary execution failure")
     return {"status": "completed", "timestamp": time.time()}
+
+async def main():
+    scheduler = TaskScheduler()
+    for index in range(10):
