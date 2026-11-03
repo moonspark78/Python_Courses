@@ -31,3 +31,9 @@ class TaskScheduler:
                 if attempt == task.retries - 1:
                     self.results[task.name] = str(error)
                 await asyncio.sleep(2 ** attempt)
+                
+                
+    async def run(self):
+        self.running = True
+        while self.queue and self.running:
+            batch = []
