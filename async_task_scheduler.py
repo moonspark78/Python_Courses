@@ -37,3 +37,7 @@ class TaskScheduler:
         self.running = True
         while self.queue and self.running:
             batch = []
+            while self.queue and len(batch) < 3:
+                batch.append(heapq.heappop(self.queue))
+            await asyncio.gather(*(self.execute(t) for t in batch))
+        self.running = False
