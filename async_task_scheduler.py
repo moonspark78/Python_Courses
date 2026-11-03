@@ -46,3 +46,4 @@ async def simulate_task():
     await asyncio.sleep(random.uniform(0.5, 2))
     if random.random() < 0.2:
         raise RuntimeError("Temporary execution failure")
+    return {"status": "completed", "timestamp": time.time()}
