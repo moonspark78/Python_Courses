@@ -3,3 +3,4 @@ class Produit:
         self.nom = nom
         self.prix = prix
         self.quantite = quantite
+        test
