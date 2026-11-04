@@ -33,3 +33,5 @@ class GestionStock:
     
 stock = GestionStock()
 stock.ajouter(Produit("Clavier", 49.99, 15))
+stock.ajouter(Produit("Souris", 24.99, 30))
+stock.ajouter(Produit("Écran", 199.99, 8))
