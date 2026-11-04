@@ -14,3 +14,5 @@ class Produit:
             print(f"Stock insuffisant pour {self.nom}")
             return False
         self.quantite -= quantite
+        print(f"{quantite} unités vendues")
+        return True
