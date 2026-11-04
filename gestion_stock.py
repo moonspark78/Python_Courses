@@ -10,3 +10,7 @@ class Produit:
     def vendre(self, quantite):
         if quantite <= 0:
             raise ValueError("Quantité invalide")
+        if quantite > self.quantite:
+            print(f"Stock insuffisant pour {self.nom}")
+            return False
+        self.quantite -= quantite
