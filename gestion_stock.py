@@ -16,3 +16,10 @@ class Produit:
         self.quantite -= quantite
         print(f"{quantite} unités vendues")
         return True
+    
+class GestionStock:
+    def __init__(self):
+        self.produits = {}
+        
+    def ajouter(self, produit):
+        self.produits[produit.nom] = produit
