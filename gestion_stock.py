@@ -6,3 +6,7 @@ class Produit:
         
     def afficher(self):
         print(f"{self.nom} | {self.prix}€ | Stock : {self.quantite}")
+        
+    def vendre(self, quantite):
+        if quantite <= 0:
+            raise ValueError("Quantité invalide")
