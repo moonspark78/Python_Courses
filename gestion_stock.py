@@ -30,3 +30,6 @@ class GestionStock:
             
     def valeur_totale(self):
         return sum(p.prix * p.quantite for p in self.produits.values())
+    
+stock = GestionStock()
+stock.ajouter(Produit("Clavier", 49.99, 15))
