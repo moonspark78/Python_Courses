@@ -3,4 +3,6 @@ class Produit:
         self.nom = nom
         self.prix = prix
         self.quantite = quantite
-        test
+        
+    def afficher(self):
+        print(f"{self.nom} | {self.prix}€ | Stock : {self.quantite}")
