@@ -23,3 +23,7 @@ class GestionStock:
         
     def ajouter(self, produit):
         self.produits[produit.nom] = produit
+        
+    def afficher_stock(self):
+        for produit in self.produits.values():
+            produit.afficher()
