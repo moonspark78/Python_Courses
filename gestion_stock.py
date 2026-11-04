@@ -27,3 +27,6 @@ class GestionStock:
     def afficher_stock(self):
         for produit in self.produits.values():
             produit.afficher()
+            
+    def valeur_totale(self):
+        return sum(p.prix * p.quantite for p in self.produits.values())
