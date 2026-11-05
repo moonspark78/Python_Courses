@@ -47,3 +47,7 @@ class DataProcessor:
             if any(isinstance(v, (int, float)) and v > threshold
                    for v in record.values()):
                 yield record
+                
+    def export(self, filename: str):
+        with open(filename, "w", encoding="utf-8") as file:
+            json.dump(self.records, file, indent=4)
