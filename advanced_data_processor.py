@@ -28,3 +28,6 @@ class DataProcessor:
     def analyze(self, key: str) -> dict:
         for record in self.records:
             try:
+                value = float(record[key])
+                self.cache[key].append(value)
+            except (KeyError, ValueError, TypeError):
