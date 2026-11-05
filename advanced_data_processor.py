@@ -41,3 +41,9 @@ class DataProcessor:
             "median": statistics.median(values),
             "variance": statistics.variance(values) if len(values) > 1 else 0
         }
+        
+    def stream(self, threshold: float):
+        for record in self.records:
+            if any(isinstance(v, (int, float)) and v > threshold
+                   for v in record.values()):
+                yield record
