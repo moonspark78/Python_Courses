@@ -16,3 +16,5 @@ def execution_timer(func: Callable) -> Callable:
         result = func(*args, **kwargs)
         elapsed = (datetime.now() - start).total_seconds()
         logger.info(f"{func.__name__} executed in {elapsed:.4f}s")
+        return result
+    return wrapper
