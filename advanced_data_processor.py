@@ -31,3 +31,6 @@ class DataProcessor:
                 value = float(record[key])
                 self.cache[key].append(value)
             except (KeyError, ValueError, TypeError):
+                logger.warning(f"Invalid record: {record}")
+        values = self.cache[key]
+        if not values:
