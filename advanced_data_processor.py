@@ -13,3 +13,6 @@ def execution_timer(func: Callable) -> Callable:
     @wraps(func)
     def wrapper(*args, **kwargs):
         start = datetime.now()
+        result = func(*args, **kwargs)
+        elapsed = (datetime.now() - start).total_seconds()
+        logger.info(f"{func.__name__} executed in {elapsed:.4f}s")
