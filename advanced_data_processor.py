@@ -34,3 +34,10 @@ class DataProcessor:
                 logger.warning(f"Invalid record: {record}")
         values = self.cache[key]
         if not values:
+            raise ValueError("No valid numerical data found")
+        return {
+            "count": len(values),
+            "mean": statistics.mean(values),
+            "median": statistics.median(values),
+            "variance": statistics.variance(values) if len(values) > 1 else 0
+        }
