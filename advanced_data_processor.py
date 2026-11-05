@@ -18,3 +18,8 @@ def execution_timer(func: Callable) -> Callable:
         logger.info(f"{func.__name__} executed in {elapsed:.4f}s")
         return result
     return wrapper
+
+class DataProcessor:
+    def __init__(self, records: list[dict[str, Any]]):
+        self.records = records
+        self.cache = defaultdict(list)
