@@ -23,3 +23,8 @@ class DataProcessor:
     def __init__(self, records: list[dict[str, Any]]):
         self.records = records
         self.cache = defaultdict(list)
+        
+    @execution_timer
+    def analyze(self, key: str) -> dict:
+        for record in self.records:
+            try:
