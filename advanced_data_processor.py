@@ -51,3 +51,11 @@ class DataProcessor:
     def export(self, filename: str):
         with open(filename, "w", encoding="utf-8") as file:
             json.dump(self.records, file, indent=4)
+            
+if __name__ == "__main__":
+    dataset = [
+        {"name": "Alice", "score": 92},
+        {"name": "Bob", "score": 76},
+        {"name": "Charlie", "score": 88},
+        {"name": "David", "score": 95}
+    ]
