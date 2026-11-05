@@ -59,3 +59,7 @@ if __name__ == "__main__":
         {"name": "Charlie", "score": 88},
         {"name": "David", "score": 95}
     ]
+    
+    processor = DataProcessor(dataset)
+    results = processor.analyze("score")
+    print(json.dumps(results, indent=4))
