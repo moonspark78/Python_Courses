@@ -25,3 +25,8 @@ def delete_task():
         print("Tâche supprimée !")
     except (ValueError, IndexError):
         print("Numéro invalide.")
+        
+def random_task():
+    if tasks:
+        print("Tâche suggérée :", random.choice(tasks))
+    else:
