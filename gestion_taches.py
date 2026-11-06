@@ -16,3 +16,8 @@ def show_tasks():
     else:
         for index, task in enumerate(tasks, 1):
             print(f"{index}. {task}")
+            
+def delete_task():
+    show_tasks()
+    try:
+        number = int(input("Numéro à supprimer : "))
