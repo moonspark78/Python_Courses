@@ -30,3 +30,10 @@ def random_task():
     if tasks:
         print("Tâche suggérée :", random.choice(tasks))
     else:
+        print("Aucune tâche disponible.")
+
+def main():
+    while True:
+        print("\n--- GESTIONNAIRE DE TÂCHES ---")
+        print("1. Ajouter une tâche")
+        print("2. Voir les tâches")
