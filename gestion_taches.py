@@ -38,3 +38,4 @@ def main():
         print("1. Ajouter une tâche")
         print("2. Voir les tâches")
         print("3. Supprimer une tâche")
+        print("4. Suggestion aléatoire")
