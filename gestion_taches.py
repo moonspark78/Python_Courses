@@ -21,3 +21,7 @@ def delete_task():
     show_tasks()
     try:
         number = int(input("Numéro à supprimer : "))
+        tasks.pop(number - 1)
+        print("Tâche supprimée !")
+    except (ValueError, IndexError):
+        print("Numéro invalide.")
