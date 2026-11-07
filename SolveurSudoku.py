@@ -12,3 +12,4 @@ def solve_sudoku(board):
                     return False
                 rows[r] |= bit
                 cols[c] |= bit
+                boxes[b] |= bit
