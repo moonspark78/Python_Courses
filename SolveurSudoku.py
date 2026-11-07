@@ -26,3 +26,6 @@ def solve_sudoku(board):
                     count = mask.bit_count()
                     if count == 0:
                         return False
+                    if count < min_count:
+                        best, candidates = (r, c, b), mask
+                        min_count = count
