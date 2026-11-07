@@ -13,3 +13,7 @@ def solve_sudoku(board):
                 rows[r] |= bit
                 cols[c] |= bit
                 boxes[b] |= bit
+                
+    def backtrack():
+        best, candidates = None, None
+        min_count = 10
