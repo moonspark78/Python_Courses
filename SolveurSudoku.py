@@ -8,3 +8,5 @@ def solve_sudoku(board):
             if v:
                 bit = 1 << (v - 1)
                 b = (r // 3) * 3 + c // 3
+                if rows[r] & bit or cols[c] & bit or boxes[b] & bit:
+                    return False
