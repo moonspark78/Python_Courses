@@ -38,3 +38,6 @@ def solve_sudoku(board):
             bit = candidates & -candidates
             candidates ^= bit
             value = bit.bit_length
+            board[r][c] = value
+            rows[r] |= bit
+            cols[c] |= bit
