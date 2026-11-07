@@ -10,3 +10,5 @@ def solve_sudoku(board):
                 b = (r // 3) * 3 + c // 3
                 if rows[r] & bit or cols[c] & bit or boxes[b] & bit:
                     return False
+                rows[r] |= bit
+                cols[c] |= bit
