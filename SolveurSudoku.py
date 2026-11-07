@@ -29,3 +29,7 @@ def solve_sudoku(board):
                     if count < min_count:
                         best, candidates = (r, c, b), mask
                         min_count = count
+                        
+
+        if best is None:
+            return True
