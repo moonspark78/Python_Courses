@@ -22,3 +22,7 @@ def solve_sudoku(board):
             for c in range(9):
                 if board[r][c] == 0:
                     b = (r // 3) * 3 + c // 3
+                    mask = FULL & ~(rows[r] | cols[c] | boxes[b])
+                    count = mask.bit_count()
+                    if count == 0:
+                        return False
