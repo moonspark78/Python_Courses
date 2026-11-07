@@ -17,3 +17,8 @@ def solve_sudoku(board):
     def backtrack():
         best, candidates = None, None
         min_count = 10
+        
+        for r in range(9):
+            for c in range(9):
+                if board[r][c] == 0:
+                    b = (r // 3) * 3 + c // 3
