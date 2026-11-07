@@ -33,3 +33,8 @@ def solve_sudoku(board):
 
         if best is None:
             return True
+        r, c, b = best
+        while candidates:
+            bit = candidates & -candidates
+            candidates ^= bit
+            value = bit.bit_length
