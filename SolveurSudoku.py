@@ -41,3 +41,6 @@ def solve_sudoku(board):
             board[r][c] = value
             rows[r] |= bit
             cols[c] |= bit
+            boxes[b] |= bit
+            if backtrack():
+                return True
