@@ -17,3 +17,6 @@ def analyser_logs(logs):
     erreurs = []
     for ligne in logs:
         for niveau in statistiques:
+            if niveau in ligne:
+                statistiques[niveau] += 1
+                if niveau == "ERROR":
