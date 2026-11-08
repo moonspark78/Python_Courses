@@ -10,3 +10,4 @@ def lire_logs(chemin):
         print("Fichier introuvable.")
         return []
     with open(chemin, "r", encoding="utf-8") as fichier:
+        return fichier.readlines()
