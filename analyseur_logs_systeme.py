@@ -22,3 +22,11 @@ def analyser_logs(logs):
                 if niveau == "ERROR":
                     erreurs.append(ligne.strip())
     return statistiques, erreurs
+
+
+def generer_rapport(statistiques, erreurs):
+    rapport = {
+        "date": datetime.datetime.now().isoformat(),
+        "statistiques": statistiques,
+        "erreurs": erreurs
+    }
