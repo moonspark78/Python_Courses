@@ -20,3 +20,5 @@ def analyser_logs(logs):
             if niveau in ligne:
                 statistiques[niveau] += 1
                 if niveau == "ERROR":
+                    erreurs.append(ligne.strip())
+    return statistiques, erreurs
