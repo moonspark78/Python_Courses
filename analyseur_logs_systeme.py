@@ -38,3 +38,8 @@ def generer_rapport(statistiques, erreurs):
 def main():
     print("=== ANALYSEUR DE LOGS SYSTEME ===")
     logs = lire_logs(LOG_FILE)
+    statistiques, erreurs = analyser_logs(logs)
+    rapport = generer_rapport(statistiques, erreurs)
+    print("\nStatistiques :", statistiques)
+    print("Nombre d'erreurs :", len(erreurs))
+    print("Rapport genere : rapport.json")
