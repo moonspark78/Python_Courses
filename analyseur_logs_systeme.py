@@ -33,3 +33,8 @@ def generer_rapport(statistiques, erreurs):
     with open("rapport.json", "w", encoding="utf-8") as fichier:
         json.dump(rapport, fichier, indent=4)
     return rapport    
+
+
+def main():
+    print("=== ANALYSEUR DE LOGS SYSTEME ===")
+    logs = lire_logs(LOG_FILE)
