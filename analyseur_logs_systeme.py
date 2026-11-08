@@ -43,3 +43,7 @@ def main():
     print("\nStatistiques :", statistiques)
     print("Nombre d'erreurs :", len(erreurs))
     print("Rapport genere : rapport.json")
+    
+    
+if __name__ == "__main__":
+    main()
