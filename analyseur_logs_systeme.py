@@ -30,3 +30,6 @@ def generer_rapport(statistiques, erreurs):
         "statistiques": statistiques,
         "erreurs": erreurs
     }
+    with open("rapport.json", "w", encoding="utf-8") as fichier:
+        json.dump(rapport, fichier, indent=4)
+    return rapport    
