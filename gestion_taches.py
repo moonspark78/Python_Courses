@@ -40,4 +40,4 @@ def main():
         print("3. Supprimer une tâche")
         print("4. Suggestion aléatoire")
         print("5. Quitter")
-        choice = input("Votre choix : ")moo
+        choice = input("Votre choix : ")
