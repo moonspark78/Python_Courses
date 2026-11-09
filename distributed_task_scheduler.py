@@ -8,3 +8,7 @@ from typing import Callable, Any
 class Task:
     name: str
     function: Callable
+    args: tuple = ()
+    id: str = field(default_factory=lambda: str(uuid.uuid4()))
+    retries: int = 3
+    status: str = "PENDING"
