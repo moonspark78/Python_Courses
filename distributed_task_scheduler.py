@@ -15,3 +15,5 @@ class Task:
     
 class TaskScheduler:
     def __init__(self, workers=5):
+        self.queue = asyncio.PriorityQueue()
+        self.workers = workers
