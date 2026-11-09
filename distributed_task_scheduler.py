@@ -48,3 +48,4 @@ class TaskScheduler:
                 self.queue.task_done()
                 
     async def start(self):
+        workers = [asyncio.create_task(self.worker(i))
