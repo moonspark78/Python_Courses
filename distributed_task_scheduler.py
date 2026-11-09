@@ -50,3 +50,5 @@ class TaskScheduler:
     async def start(self):
         workers = [asyncio.create_task(self.worker(i))
                    for i in range(self.workers)]
+        await self.queue.join()
+        for worker in workers:
