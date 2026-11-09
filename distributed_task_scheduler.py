@@ -21,3 +21,7 @@ class TaskScheduler:
         
     async def submit(self, task: Task, priority=1):
         await self.queue.put((priority, time.time(), task))
+        
+        
+    async def execute(self, task: Task):
+        for attempt in range(task.retries + 1):
