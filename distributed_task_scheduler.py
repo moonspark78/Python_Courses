@@ -35,3 +35,5 @@ class TaskScheduler:
                 task.status = "RETRYING"
                 if attempt == task.retries:
                     task.status = "FAILED"
+                    self.results[task.id] = str(error)
+                    return
