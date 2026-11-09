@@ -55,3 +55,4 @@ class TaskScheduler:
             worker.cancel()
             
     def report(self):
+        return {"workers": self.workers, "results": self.results}
