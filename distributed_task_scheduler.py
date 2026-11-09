@@ -52,3 +52,4 @@ class TaskScheduler:
                    for i in range(self.workers)]
         await self.queue.join()
         for worker in workers:
+            worker.cancel()
