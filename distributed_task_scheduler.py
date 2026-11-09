@@ -18,3 +18,6 @@ class TaskScheduler:
         self.queue = asyncio.PriorityQueue()
         self.workers = workers
         self.results = {}
+        
+    async def submit(self, task: Task, priority=1):
+        await self.queue.put((priority, time.time(), task))
