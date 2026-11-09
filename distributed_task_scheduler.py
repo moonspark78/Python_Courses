@@ -28,3 +28,6 @@ class TaskScheduler:
             try:
                 task.status = "RUNNING"
                 result = await asyncio.to_thread(task.function, *task.args)
+                task.status = "COMPLETED"
+                self.results[task.id] = result
+                return
