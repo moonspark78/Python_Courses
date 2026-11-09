@@ -37,3 +37,12 @@ class TaskScheduler:
                     task.status = "FAILED"
                     self.results[task.id] = str(error)
                     return
+                await asyncio.sleep(2 ** attempt)
+
+    async def worker(self, worker_id):
+        while True:
+            priority, timestamp, task = await self.queue.get()
+            try:
+                await self.execute(task)
+            finally:
+                self.queue.task_done()
