@@ -12,3 +12,6 @@ class Task:
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     retries: int = 3
     status: str = "PENDING"
+    
+class TaskScheduler:
+    def __init__(self, workers=5):
