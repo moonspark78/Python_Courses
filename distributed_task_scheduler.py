@@ -49,3 +49,4 @@ class TaskScheduler:
                 
     async def start(self):
         workers = [asyncio.create_task(self.worker(i))
+                   for i in range(self.workers)]
