@@ -25,3 +25,6 @@ class TaskScheduler:
         
     async def execute(self, task: Task):
         for attempt in range(task.retries + 1):
+            try:
+                task.status = "RUNNING"
+                result = await asyncio.to_thread(task.function, *task.args)
