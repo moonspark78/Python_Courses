@@ -46,3 +46,5 @@ class TaskScheduler:
                 await self.execute(task)
             finally:
                 self.queue.task_done()
+                
+    async def start(self):
