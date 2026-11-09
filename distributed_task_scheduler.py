@@ -53,3 +53,5 @@ class TaskScheduler:
         await self.queue.join()
         for worker in workers:
             worker.cancel()
+            
+    def report(self):
