@@ -22,3 +22,8 @@ def analyze_logs(logs):
         match = re.search(
             r"(\d{4}-\d{2}-\d{2}) (\w+) (.+) user=(\d+)", entry
         )
+        if not match:
+            continue
+
+        date, level, event, user = match.groups()
+        fingerprint = hashlib.sha256(entry.encode()).hexdigest()
