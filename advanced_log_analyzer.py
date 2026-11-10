@@ -41,5 +41,6 @@ def analyze_logs(logs):
             {k: sum(v[k] for v in stats.values())
              for k in ["ERROR", "WARNING", "INFO"]}
         )),
-        
+        "users": dict(users),
+        "daily": {k: dict(v) for k, v in stats.items()}
     }
