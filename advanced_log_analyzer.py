@@ -45,3 +45,4 @@ def analyze_logs(logs):
         "daily": {k: dict(v) for k, v in stats.items()}
     }
     return report
+result = analyze_logs(LOGS)
