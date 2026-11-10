@@ -16,3 +16,4 @@ LOGS = [
 def analyze_logs(logs):
     stats = defaultdict(Counter)
     users = defaultdict(list)
+    fingerprints = set()
