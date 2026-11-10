@@ -44,3 +44,4 @@ def analyze_logs(logs):
         "users": dict(users),
         "daily": {k: dict(v) for k, v in stats.items()}
     }
+    return report
