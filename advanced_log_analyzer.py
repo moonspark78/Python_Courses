@@ -31,3 +31,15 @@ def analyze_logs(logs):
         if fingerprint in fingerprints:
             continue
         fingerprints.add(fingerprint)
+        
+        stats[date][level] += 1
+        users[user].append({"level": level, "event": event})
+
+    report = {
+        "total_events": sum(map(sum, stats.values())),
+        "levels": dict(Counter(
+            {k: sum(v[k] for v in stats.values())
+             for k in ["ERROR", "WARNING", "INFO"]}
+        )),
+        
+    }
