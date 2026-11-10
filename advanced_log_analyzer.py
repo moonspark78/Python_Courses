@@ -46,3 +46,4 @@ def analyze_logs(logs):
     }
     return report
 result = analyze_logs(LOGS)
+print(json.dumps(result, indent=4))
