@@ -12,3 +12,7 @@ LOGS = [
     "2026-11-10 ERROR DATABASE connection user=201",
     "2026-11-10 INFO LOGOUT user=201",
 ]
+
+def analyze_logs(logs):
+    stats = defaultdict(Counter)
+    users = defaultdict(list)
