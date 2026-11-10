@@ -17,3 +17,8 @@ def analyze_logs(logs):
     stats = defaultdict(Counter)
     users = defaultdict(list)
     fingerprints = set()
+
+    for entry in logs:
+        match = re.search(
+            r"(\d{4}-\d{2}-\d{2}) (\w+) (.+) user=(\d+)", entry
+        )
