@@ -27,3 +27,7 @@ def analyze_logs(logs):
 
         date, level, event, user = match.groups()
         fingerprint = hashlib.sha256(entry.encode()).hexdigest()
+        
+        if fingerprint in fingerprints:
+            continue
+        fingerprints.add(fingerprint)
