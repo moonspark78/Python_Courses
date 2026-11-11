@@ -24,3 +24,9 @@ class IntrusionDetector:
             self.blocked.add(ip)
             return "INTRUSION DETECTED"
         return "MONITORING"
+    
+    def report(self):
+        print("\n--- SECURITY REPORT ---")
+        print("Blocked IPs:", len(self.blocked))
+        for ip in sorted(self.blocked):
+            print(f"[ALERT] {ip}")
