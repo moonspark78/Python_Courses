@@ -8,3 +8,7 @@ class IntrusionDetector:
         self.window = window
         self.attempts = defaultdict(deque)
         self.blocked = set()
+        
+    def analyze(self, ip, success=False):
+        now = datetime.now().timestamp()
+        if ip in self.blocked:
