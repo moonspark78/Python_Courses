@@ -32,3 +32,5 @@ class IntrusionDetector:
             print(f"[ALERT] {ip}")
             
 if __name__ == "__main__":
+    firewall = IntrusionDetector()
+    ips = ["192.168.1.10", "10.0.0.5", "172.16.0.8"]
