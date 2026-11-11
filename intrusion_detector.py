@@ -12,3 +12,6 @@ class IntrusionDetector:
     def analyze(self, ip, success=False):
         now = datetime.now().timestamp()
         if ip in self.blocked:
+            return "BLOCKED"
+        history = self.attempts[ip]
+        while history and now - history[0] > self.window:
