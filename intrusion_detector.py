@@ -18,3 +18,6 @@ class IntrusionDetector:
             history.popleft()
         if success:
             history.clear()
+            return "AUTHENTICATED"
+        history.append(now)
+        if len(history) >= self.threshold:
