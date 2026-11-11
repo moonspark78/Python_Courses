@@ -38,3 +38,4 @@ if __name__ == "__main__":
         ip = random.choice(ips)
         result = firewall.analyze(ip)
         print(f"{ip:15} -> {result}")
+    firewall.report()
