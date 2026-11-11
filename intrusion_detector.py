@@ -21,3 +21,6 @@ class IntrusionDetector:
             return "AUTHENTICATED"
         history.append(now)
         if len(history) >= self.threshold:
+            self.blocked.add(ip)
+            return "INTRUSION DETECTED"
+        return "MONITORING"
