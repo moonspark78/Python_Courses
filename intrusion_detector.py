@@ -30,3 +30,5 @@ class IntrusionDetector:
         print("Blocked IPs:", len(self.blocked))
         for ip in sorted(self.blocked):
             print(f"[ALERT] {ip}")
+            
+if __name__ == "__main__":
