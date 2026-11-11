@@ -15,3 +15,6 @@ class IntrusionDetector:
             return "BLOCKED"
         history = self.attempts[ip]
         while history and now - history[0] > self.window:
+            history.popleft()
+        if success:
+            history.clear()
