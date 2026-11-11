@@ -34,3 +34,5 @@ class IntrusionDetector:
 if __name__ == "__main__":
     firewall = IntrusionDetector()
     ips = ["192.168.1.10", "10.0.0.5", "172.16.0.8"]
+    for _ in range(30):
+        ip = random.choice(ips)
