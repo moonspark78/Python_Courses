@@ -35,3 +35,9 @@ def complete_task(tasks):
         print("Tâche terminée.")
     except (ValueError, IndexError):
         print("Numéro invalide.")
+        
+
+def main():
+    tasks = load_tasks()
+    while True:
+        print("\n--- GESTIONNAIRE DE TÂCHES ---")
