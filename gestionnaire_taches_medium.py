@@ -41,3 +41,5 @@ def main():
     tasks = load_tasks()
     while True:
         print("\n--- GESTIONNAIRE DE TÂCHES ---")
+        print("1. Voir  2. Ajouter  3. Terminer  4. Quitter")
+        choice = input("Choix : ")
