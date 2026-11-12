@@ -15,3 +15,6 @@ def save_tasks(tasks):
 def show_tasks(tasks):
     if not tasks:
         print("\nAucune tâche pour le moment.")
+    for number, task in enumerate(tasks, start=1):
+        status = "✓" if task["done"] else " "
+        print(f"{number}. [{status}] {task['title']} ({task['date']})")
