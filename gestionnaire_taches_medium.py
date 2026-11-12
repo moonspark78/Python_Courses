@@ -18,3 +18,7 @@ def show_tasks(tasks):
     for number, task in enumerate(tasks, start=1):
         status = "✓" if task["done"] else " "
         print(f"{number}. [{status}] {task['title']} ({task['date']})")
+        
+def add_task(tasks):
+    title = input("Nom de la tâche : ").strip()
+    if title:
