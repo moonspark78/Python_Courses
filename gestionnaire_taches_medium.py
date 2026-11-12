@@ -25,3 +25,10 @@ def add_task(tasks):
         tasks.append({"title": title, "done": False, "date": datetime.now().strftime("%d/%m/%Y")})
         save_tasks(tasks)
         print("Tâche ajoutée.")
+        
+def complete_task(tasks):
+    show_tasks(tasks)
+    try:
+        number = int(input("Numéro à terminer : "))
+        tasks[number - 1]["done"] = True
+        save_tasks(tasks)
