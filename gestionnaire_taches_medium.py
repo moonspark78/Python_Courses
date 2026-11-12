@@ -32,3 +32,6 @@ def complete_task(tasks):
         number = int(input("Numéro à terminer : "))
         tasks[number - 1]["done"] = True
         save_tasks(tasks)
+        print("Tâche terminée.")
+    except (ValueError, IndexError):
+        print("Numéro invalide.")
