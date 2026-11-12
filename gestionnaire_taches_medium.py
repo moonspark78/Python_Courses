@@ -11,3 +11,7 @@ def load_tasks():
 
 def save_tasks(tasks):
     FILE.write_text(json.dumps(tasks, indent=2, ensure_ascii=False), encoding="utf-8")
+    
+def show_tasks(tasks):
+    if not tasks:
+        print("\nAucune tâche pour le moment.")
