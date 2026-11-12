@@ -22,3 +22,5 @@ def show_tasks(tasks):
 def add_task(tasks):
     title = input("Nom de la tâche : ").strip()
     if title:
+        tasks.append({"title": title, "done": False, "date": datetime.now().strftime("%d/%m/%Y")})
+        save_tasks(tasks)
