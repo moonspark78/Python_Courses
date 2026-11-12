@@ -24,3 +24,4 @@ def add_task(tasks):
     if title:
         tasks.append({"title": title, "done": False, "date": datetime.now().strftime("%d/%m/%Y")})
         save_tasks(tasks)
+        print("Tâche ajoutée.")
