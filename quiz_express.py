@@ -22,3 +22,5 @@ def jouer():
         else:
             print(f"Faux ! Réponse : {reponse}")
     duree = round(time.time() - debut, 1)
+    print(f"\nScore : {score}/{len(QUESTIONS)}")
+    print(f"Temps : {duree} secondes")
