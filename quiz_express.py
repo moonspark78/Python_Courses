@@ -13,3 +13,8 @@ def jouer():
     score = 0
     random.shuffle(QUESTIONS)
     debut = time.time()
+    print("\n=== QUIZ EXPRESS ===")
+    for numero, (question, reponse) in enumerate(QUESTIONS, 1):
+        saisie = input(f"{numero}. {question} ").strip().lower()
+        if saisie == reponse:
+            print("Correct !")
