@@ -28,3 +28,5 @@ def jouer():
         print("Parfait, sans faute !")
     elif score >= 3:
         print("Bien joué !")
+    else:
+        print("Tu peux faire mieux !")
