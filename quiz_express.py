@@ -35,3 +35,4 @@ if __name__ == "__main__":
         jouer()
         encore = input("\nRejouer ? (o/n) ").strip().lower()
         if encore != "o":
+            print("À bientôt !")
