@@ -8,3 +8,8 @@ QUESTIONS = [
     ("Côtés d'un hexagone ?", "6"),
     ("Capitale du Japon ?", "tokyo"),
 ]
+
+def jouer():
+    score = 0
+    random.shuffle(QUESTIONS)
+    debut = time.time()
