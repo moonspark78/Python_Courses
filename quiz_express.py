@@ -18,3 +18,7 @@ def jouer():
         saisie = input(f"{numero}. {question} ").strip().lower()
         if saisie == reponse:
             print("Correct !")
+            score += 1
+        else:
+            print(f"Faux ! Réponse : {reponse}")
+    duree = round(time.time() - debut, 1)
