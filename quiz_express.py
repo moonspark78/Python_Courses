@@ -24,3 +24,7 @@ def jouer():
     duree = round(time.time() - debut, 1)
     print(f"\nScore : {score}/{len(QUESTIONS)}")
     print(f"Temps : {duree} secondes")
+    if score == 5:
+        print("Parfait, sans faute !")
+    elif score >= 3:
+        print("Bien joué !")
