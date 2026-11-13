@@ -30,3 +30,5 @@ def jouer():
         print("Bien joué !")
     else:
         print("Tu peux faire mieux !")
+if __name__ == "__main__":
+    while True:
