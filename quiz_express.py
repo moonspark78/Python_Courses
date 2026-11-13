@@ -32,3 +32,5 @@ def jouer():
         print("Tu peux faire mieux !")
 if __name__ == "__main__":
     while True:
+        jouer()
+        encore = input("\nRejouer ? (o/n) ").strip().lower()
