@@ -11,3 +11,6 @@ class Livre:
     def emprunter(self):
         if self.disponible:
             self.disponible = False
+            print(f"Vous avez emprunté : {self.titre}")
+        else:
+            print("Ce livre est déjà emprunté.")
