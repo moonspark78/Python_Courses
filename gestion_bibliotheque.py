@@ -17,3 +17,10 @@ class Livre:
             
     def retourner(self):
         self.disponible = True
+        print(f"Livre retourné : {self.titre}")
+
+
+class Bibliotheque:
+    def __init__(self, nom):
+        self.nom = nom
+        self.livres = []
