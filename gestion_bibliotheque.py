@@ -58,3 +58,6 @@ bibliotheque.ajouter_livre(livre3)
 bibliotheque.afficher_livres()
 
 livre = bibliotheque.rechercher_livre("Python pour débutants")
+
+if livre:
+    livre.emprunter()
