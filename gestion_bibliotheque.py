@@ -29,3 +29,8 @@ class Bibliotheque:
     def ajouter_livre(self, livre):
         self.livres.append(livre)
         print(f"Livre ajouté : {livre.titre}")
+        
+    def afficher_livres(self):
+        print(f"\nBibliothèque : {self.nom}")
+        for livre in self.livres:
+            livre.afficher_infos()
