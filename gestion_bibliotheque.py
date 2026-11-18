@@ -41,3 +41,20 @@ class Bibliotheque:
             if livre.titre.lower() == titre.lower():
                 return livre
         return None
+    
+    
+# -------- Programme principal --------
+
+bibliotheque = Bibliotheque("Bibliothèque Centrale")
+
+livre1 = Livre("Python pour débutants", "Alice Martin")
+livre2 = Livre("Java avancé", "Paul Dupont")
+livre3 = Livre("Apprendre SQL", "Julie Bernard")
+
+bibliotheque.ajouter_livre(livre1)
+bibliotheque.ajouter_livre(livre2)
+bibliotheque.ajouter_livre(livre3)
+
+bibliotheque.afficher_livres()
+
+livre = bibliotheque.rechercher_livre("Python pour débutants")
