@@ -14,3 +14,6 @@ class Livre:
             print(f"Vous avez emprunté : {self.titre}")
         else:
             print("Ce livre est déjà emprunté.")
+            
+    def retourner(self):
+        self.disponible = True
