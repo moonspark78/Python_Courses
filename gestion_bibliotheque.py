@@ -61,3 +61,9 @@ livre = bibliotheque.rechercher_livre("Python pour débutants")
 
 if livre:
     livre.emprunter()
+    
+bibliotheque.afficher_livres()
+
+livre.retourner()
+
+bibliotheque.afficher_livres()
