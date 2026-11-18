@@ -24,3 +24,8 @@ class Bibliotheque:
     def __init__(self, nom):
         self.nom = nom
         self.livres = []
+        
+        
+    def ajouter_livre(self, livre):
+        self.livres.append(livre)
+        print(f"Livre ajouté : {livre.titre}")
