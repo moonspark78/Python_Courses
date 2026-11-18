@@ -7,3 +7,7 @@ class Livre:
     def afficher_infos(self):
         statut = "Disponible" if self.disponible else "Emprunté"
         print(f"{self.titre} - {self.auteur} ({statut})")
+        
+    def emprunter(self):
+        if self.disponible:
+            self.disponible = False
