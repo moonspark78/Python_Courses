@@ -34,3 +34,10 @@ class Bibliotheque:
         print(f"\nBibliothèque : {self.nom}")
         for livre in self.livres:
             livre.afficher_infos()
+            
+            
+    def rechercher_livre(self, titre):
+        for livre in self.livres:
+            if livre.titre.lower() == titre.lower():
+                return livre
+        return None
