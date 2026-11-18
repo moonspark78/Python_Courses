@@ -36,4 +36,4 @@ if __name__ == "__main__":
         encore = input("\nRejouer ? (o/n) ").strip().lower()
         if encore != "o":
             print("À bientôt !")
-            break
+            breakgestion_bibliotheque.py
