@@ -19,3 +19,6 @@ class Event:
         
     def cancel(self, user):
         self.participants.discard(user)
+        
+    def __repr__(self):
+        return f"{self.title} | {self.date.date()} | {len(self.participants)}/{self.capacity}"
