@@ -16,3 +16,6 @@ class Event:
         if user in self.participants:
             raise ValueError("Already registered")
         self.participants.add(user)
+        
+    def cancel(self, user):
+        self.participants.discard(user)
