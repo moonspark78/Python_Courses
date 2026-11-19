@@ -22,3 +22,14 @@ class Event:
         
     def __repr__(self):
         return f"{self.title} | {self.date.date()} | {len(self.participants)}/{self.capacity}"
+    
+class EventManager:
+    def __init__(self):
+        self.events = defaultdict(list)
+
+    def create_event(self, event):
+        self.events[event.date.year].append(event)
+
+    def search(self, keyword):
+        return [e for events in self.events.values()
+                for e in events if keyword.lower() in e.title.lower()]
