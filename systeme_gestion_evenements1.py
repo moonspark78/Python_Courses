@@ -14,3 +14,5 @@ class Event:
         if len(self.participants) >= self.capacity:
             raise ValueError("Event is full")
         if user in self.participants:
+            raise ValueError("Already registered")
+        self.participants.add(user)
