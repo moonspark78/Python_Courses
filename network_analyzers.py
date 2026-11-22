@@ -36,3 +36,6 @@ def main():
     parser = argparse.ArgumentParser(description="Network Scanner")
     parser.add_argument("host", help="Target hostname or IP")
     args = parser.parse_args()
+    report = analyze_host(args.host)
+    print(json.dumps(report, indent=4))
+    print("\nScan completed.")
