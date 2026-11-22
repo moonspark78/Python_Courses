@@ -17,3 +17,7 @@ def scan_host(host, port):
 def analyze_host(host):
     try:
         ip = ipaddress.ip_address(socket.gethostbyname(host))
+        ports = [21, 22, 80, 443, 3306, 8080]
+        results = {}
+        for port in ports:
+            results[str(port)] = scan_host(str(ip), port)
