@@ -31,3 +31,8 @@ def analyze_host(host):
             }
     except (socket.gaierror, ValueError) as error:
         return {"error": str(error)}
+    
+def main():
+    parser = argparse.ArgumentParser(description="Network Scanner")
+    parser.add_argument("host", help="Target hostname or IP")
+    args = parser.parse_args()
