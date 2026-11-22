@@ -21,3 +21,8 @@ def analyze_host(host):
         results = {}
         for port in ports:
             results[str(port)] = scan_host(str(ip), port)
+        return {
+            "hostname": host,
+            "ip_address": str(ip),
+            "version": ip.version,
+        }
