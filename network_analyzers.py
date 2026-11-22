@@ -29,3 +29,5 @@ def analyze_host(host):
             "open_ports": [p for p, opened in results.items() if opened],
             "port_scan": results
             }
+    except (socket.gaierror, ValueError) as error:
+        return {"error": str(error)}
