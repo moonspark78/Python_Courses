@@ -10,3 +10,5 @@ def scan_host(host, port):
         result = connection.connect_ex((host, port))
         connection.close()
         return result == 0
+    except socket.error:
+        return False
