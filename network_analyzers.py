@@ -12,3 +12,8 @@ def scan_host(host, port):
         return result == 0
     except socket.error:
         return False
+    
+    
+def analyze_host(host):
+    try:
+        ip = ipaddress.ip_address(socket.gethostbyname(host))
