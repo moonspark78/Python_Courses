@@ -39,3 +39,6 @@ def main():
     report = analyze_host(args.host)
     print(json.dumps(report, indent=4))
     print("\nScan completed.")
+    
+if __name__ == "__main__":
+    main()
