@@ -25,4 +25,7 @@ def analyze_host(host):
             "hostname": host,
             "ip_address": str(ip),
             "version": ip.version,
-        }
+            "is_private": ip.is_private,
+            "open_ports": [p for p, opened in results.items() if opened],
+            "port_scan": results
+            }
