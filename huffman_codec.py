@@ -39,3 +39,4 @@ def decompress(blob):
 
 if __name__ == "__main__":
     text = b"abracadabra " * 50
+    print(decompress(packed := compress(text)) == text, len(text), "->", len(packed))
