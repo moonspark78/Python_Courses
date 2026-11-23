@@ -36,3 +36,6 @@ def decompress(blob):
             
     assert zlib.crc32(out) == crc, "données corrompues"
     return bytes(out)
+
+if __name__ == "__main__":
+    text = b"abracadabra " * 50
