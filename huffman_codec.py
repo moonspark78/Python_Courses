@@ -14,3 +14,4 @@ def build_codes(freq):
         (n1, _, a), (n2, _, b) = heapq.heappop(heap), heapq.heappop(heap)
         merged = {s: "0" + c for s, c in a.items()} | {s: "1" + c for s, c in b.items()}
         heapq.heappush(heap, (n1 + n2, next(tie), merged))
+    return {s: c or "0" for s, c in heap[0][2].items()} if heap else {}
