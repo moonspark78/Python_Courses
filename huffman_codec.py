@@ -21,3 +21,5 @@ def compress(data):
     codes = build_codes(freq := Counter(data))
     bits = "".join(codes[b] for b in data)
     bits += "0" * (-len(bits) % 8)
+    table = b"".join(struct.pack(">BI", s, n) for s, n in sorted(freq.items()))
+    return struct.pack(">IIH", zlib.crc32(data), len(data), len(freq)) + table + int(bits
