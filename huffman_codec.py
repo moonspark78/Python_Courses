@@ -28,3 +28,8 @@ def decompress(blob):
     crc, size, k = struct.unpack_from(">IIH", blob)
     rev = {c: s for s, c in build_codes(dict(struct.unpack_from(">BI", blob, 10 + 5 * i) for i in range(k))).items()}
     out, cur = bytearray(), ""
+    for bit in "".join(f"{b:08b}" for b in blob[10 + 5 * k:]):
+        cur += bit
+        if cur in rev and len(out) < size:
+            out.append(rev[cur])
+            cur = ""
