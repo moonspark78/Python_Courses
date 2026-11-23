@@ -22,4 +22,9 @@ def compress(data):
     bits = "".join(codes[b] for b in data)
     bits += "0" * (-len(bits) % 8)
     table = b"".join(struct.pack(">BI", s, n) for s, n in sorted(freq.items()))
-    return struct.pack(">IIH", zlib.crc32(data), len(data), len(freq)) + table + int(bits
+    return struct.pack(">IIH", zlib.crc32(data), len(data), len(freq)) + table + int(bits)
+
+def decompress(blob):
+    crc, size, k = struct.unpack_from(">IIH", blob)
+    rev = {c: s for s, c in build_codes(dict(struct.unpack_from(">BI", blob, 10 + 5 * i) for i in range(k))).items()}
+    out, cur = bytearray(), ""
