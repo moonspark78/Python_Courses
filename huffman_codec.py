@@ -33,3 +33,6 @@ def decompress(blob):
         if cur in rev and len(out) < size:
             out.append(rev[cur])
             cur = ""
+            
+    assert zlib.crc32(out) == crc, "données corrompues"
+    return bytes(out)
