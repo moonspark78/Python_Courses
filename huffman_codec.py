@@ -15,3 +15,9 @@ def build_codes(freq):
         merged = {s: "0" + c for s, c in a.items()} | {s: "1" + c for s, c in b.items()}
         heapq.heappush(heap, (n1 + n2, next(tie), merged))
     return {s: c or "0" for s, c in heap[0][2].items()} if heap else {}
+
+
+def compress(data):
+    codes = build_codes(freq := Counter(data))
+    bits = "".join(codes[b] for b in data)
+    bits += "0" * (-len(bits) % 8)
