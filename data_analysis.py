@@ -11,3 +11,5 @@ data = {
     "experience": np.random.randint(0, 25, 100),
     "department": np.random.choice(["IT", "HR", "Sales"], 100)
 }
+
+df = pd.DataFrame(data)
