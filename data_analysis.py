@@ -17,3 +17,5 @@ df = pd.DataFrame(data)
 # Explore the dataset
 print("Dataset overview:")
 print(df.describe())
+print("\nMissing values:")
+print(df.isnull().sum())
