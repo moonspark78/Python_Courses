@@ -13,3 +13,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+# Explore the dataset
+print("Dataset overview:")
+print(df.describe())
