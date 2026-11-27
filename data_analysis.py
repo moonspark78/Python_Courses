@@ -26,3 +26,6 @@ department_stats = df.groupby("department").agg(
     avg_experience=("experience", "mean"),
     employee_count=("age", "count")
 )
+
+print("\nDepartment statistics:")
+print(department_stats)
