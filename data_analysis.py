@@ -19,3 +19,10 @@ print("Dataset overview:")
 print(df.describe())
 print("\nMissing values:")
 print(df.isnull().sum())
+
+# Calculate department statistics
+department_stats = df.groupby("department").agg(
+    avg_salary=("salary", "mean"),
+    avg_experience=("experience", "mean"),
+    employee_count=("age", "count")
+)
